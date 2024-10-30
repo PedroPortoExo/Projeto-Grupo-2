@@ -2,14 +2,14 @@ function BookRentalPage({ userId }) {
     const [books, setBooks] = React.useState([]);
   
     React.useEffect(() => {
-      fetch("http://localhost:3000/books")
+      fetch("http://localhost:5000/books")
         .then(response => response.json())
         .then(setBooks);
     }, []);
   
     const handleRentBook = async (bookId) => {
       // Obtém dados do usuário
-      const userResponse = await fetch(`http://localhost:3000/users/${userId}`);
+      const userResponse = await fetch(`http://localhost:5000/users/${userId}`);
       const user = await userResponse.json();
   
       // Verifica a disponibilidade e faz o aluguel
@@ -27,14 +27,14 @@ function BookRentalPage({ userId }) {
           ]
         };
   
-        await fetch(`http://localhost:3000/users/${userId}`, {
+        await fetch(`http://localhost:5000/users/${userId}`, {
           method: "PUT",
           headers: { "Content-Type": "application/json" },
           body: JSON.stringify(updatedUser)
         });
   
         // Atualizar status do livro
-        await fetch(`http://localhost:3000/books/${bookId}`, {
+        await fetch(`http://localhost:5000/books/${bookId}`, {
           method: "PATCH",
           headers: { "Content-Type": "application/json" },
           body: JSON.stringify({ isAvailable: false })
