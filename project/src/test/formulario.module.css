@@ -1,0 +1,72 @@
+/* Container do formulário */
+.formContainer {
+    background-color: #1a1a1a; /* Fundo cinza escuro */
+    border: 2px solid #00b3ff; /* Borda azul neon */
+    border-radius: 10px;
+    padding: 30px;
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+    box-shadow: 0 0 15px rgba(0, 179, 255, 0.3);
+  }
+  
+  /* Estilo dos títulos */
+  .formTitle {
+    color: #00b3ff;
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-shadow: 0 0 8px rgba(0, 179, 255, 0.8);
+  }
+  
+  /* Labels dos inputs */
+  .label {
+    display: block;
+    font-size: 16px;
+    color: #e0e0e0;
+    margin-bottom: 5px;
+  }
+  
+  /* Inputs do formulário */
+  .input {
+    width: 100%;
+    padding: 12px;
+    background-color: #0d0d0d; /* Fundo preto */
+    border: 2px solid #00b3ff; /* Borda azul neon */
+    border-radius: 5px;
+    color: #e0e0e0; /* Texto branco */
+    outline: none;
+    transition: border-color 0.3s, box-shadow 0.3s;
+  }
+  
+  .input:focus {
+    border-color: #1aebff; /* Borda azul mais clara no foco */
+    box-shadow: 0 0 10px rgba(26, 235, 255, 0.8);
+  }
+  
+  /* Estilo dos botões */
+  .button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 20px;
+    background-color: #00b3ff;
+    border: none;
+    border-radius: 5px;
+    color: #0d0d0d; /* Texto preto */
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s, box-shadow 0.3s;
+  }
+  
+  .button:hover {
+    background-color: #1aebff; /* Fundo mais claro no hover */
+    box-shadow: 0 0 12px rgba(26, 235, 255, 0.7);
+  }
+  
+  /* Mensagens de erro */
+  .errorMessage {
+    color: #ff4d4d; /* Vermelho para erros */
+    font-size: 14px;
+    margin-top: 5px;
+  }  
