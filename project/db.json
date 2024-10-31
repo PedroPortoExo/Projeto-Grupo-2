@@ -1,7 +1,51 @@
 {
-    "users": [],
     "books": [
-      { "id": 1, "title": "Livro A", "author": "Autor X", "isAvailable": true },
-      { "id": 2, "title": "Livro B", "author": "Autor Y", "isAvailable": true }
+      {
+        "id": 1,
+        "title": "1984",
+        "author": "George Orwell",
+        "category": "ficção",
+        "copiesAvailable": 3,
+        "totalCopies": 5
+      },
+      {
+        "id": 2,
+        "title": "A Brief History of Time",
+        "author": "Stephen Hawking",
+        "category": "ciência",
+        "copiesAvailable": 1,
+        "totalCopies": 2
+      }
+    ],
+    "categories": [
+      { "id": 1, "name": "ficção" },
+      { "id": 2, "name": "não-ficção" },
+      { "id": 3, "name": "ciência" },
+      { "id": 4, "name": "tecnologia" }
+    ],
+    "loans": [
+      {
+        "id": 1,
+        "userId": 1,
+        "bookId": 1,
+        "borrowDate": "2024-10-29",
+        "returnDate": "2024-11-05"
+      }
+    ],
+    "users": [
+      {
+        "id": 1,
+        "name": "Alice Silva",
+        "email": "alice@example.com",
+        "contact": "123-456-7890",
+        "currentLoans": [
+          {
+            "bookId": 1,
+            "borrowDate": "2024-10-29",
+            "returnDate": "2024-11-05"
+          }
+        ]
+      }
     ]
-  }  
+  }
+  
