@@ -1,38 +1,32 @@
 {
-    "books": [
-      {
-        "id": 1,
-        "title": "1984",
-        "author": "George Orwell",
-        "category": "ficção",
-        "copiesAvailable": 3,
-        "totalCopies": 5
-      },
-      {
-        "id": 2,
-        "title": "A Brief History of Time",
-        "author": "Stephen Hawking",
-        "category": "ciência",
-        "copiesAvailable": 1,
-        "totalCopies": 2
-      }
-    ],
-    "categories": [
-      { "id": 1, "name": "ficção" },
-      { "id": 2, "name": "não-ficção" },
-      { "id": 3, "name": "ciência" },
-      { "id": 4, "name": "tecnologia" }
-    ],
-    "loans": [
-      {
-        "id": 1,
-        "userId": 1,
-        "bookId": 1,
-        "borrowDate": "2024-10-29",
-        "returnDate": "2024-11-05"
-      }
-    ],
-      "users": [
+  "books": [
+    {
+      "id": 1,
+      "title": "1984",
+      "author": "George Orwell",
+      "category": "ficção",
+      "copiesAvailable": 5,
+      "totalCopies": 5,
+      "coverImage": "1984.jpg" 
+    },
+    {
+      "id": 2,
+      "title": "A Brief History of Time",
+      "author": "Stephen Hawking",
+      "category": "ciência",
+      "copiesAvailable": 2,
+      "totalCopies": 2,
+      "coverImage": "brief-history-of-time.jpg"
+    }
+  ],
+  "categories": [
+    { "id": 1, "name": "ficção" },
+    { "id": 2, "name": "não-ficção" },
+    { "id": 3, "name": "ciência" },
+    { "id": 4, "name": "tecnologia" }
+  ],
+  "loans": [],
+  "users": [
     {
       "id": 1,
       "name": "User Teste",
@@ -41,5 +35,4 @@
       "borrowedBooks": []
     }
   ]
-  }
-  
+}
