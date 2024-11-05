@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import styles from './NavBar.module.css';
-import logo from './logo.svg';
+import logo from './assets/images/logo.svg';
 
 export default function Navbar() {
   const [user, setUser] = useState(null);
@@ -39,6 +39,12 @@ export default function Navbar() {
         <li>
           <Link to="/Home" className={styles.navbarLink}>Home</Link>
         </li>
+        <li>
+          <Link to="/Acervo" className={styles.navbarLink}>Acervo</Link>
+          </li>
+        <li>
+          <Link to="/Sobre-nos" className={styles.navbarLink}>Sobre nós</Link>
+        </li>
         {user ? (
           <>
             <li className={styles.navbarLink}>Olá, {user.name}</li>
@@ -48,7 +54,7 @@ export default function Navbar() {
           </>
         ) : (
           <li>
-            <Link to="/Login" className={styles.navbarLink}>Login</Link>
+            <Link to="/" className={styles.navbarLink}>Login</Link>
           </li>
         )}
       </ul>
