@@ -6,7 +6,8 @@ import {
        , FaTwitter as Twitter
        , FaInstagram as Instagram
        , FaLinkedin as Linkedin
-       , FaGithub as Github 
+       , FaGithub as Github
+       , FaLock as Lock 
     } 
     from 'react-icons/fa';
 import { AiFillHome, AiFillPhone, AiFillMail } from 'react-icons/ai';
@@ -29,5 +30,6 @@ export {
     MdEmail,
     MdLocationOn,
     IoMdHeart,
-    IoMdStar
+    IoMdStar,
+    Lock
 };

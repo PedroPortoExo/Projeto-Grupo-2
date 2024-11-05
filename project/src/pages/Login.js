@@ -3,6 +3,7 @@ import { useAuth } from '../components/AuthContext';
 import styles from './login.module.css';
 import Cadastro from './Cadastro';
 import { useNavigate } from 'react-router-dom';
+import {  Lock } from '../components/Icons'
 
 export default function LoginPage() {
   const { login } = useAuth();
@@ -23,7 +24,8 @@ export default function LoginPage() {
 
   return (
     <div className={styles.container}>
-      <h2 className={styles.title}>Login</h2>
+      <h2 className={styles.title}>
+      <Lock style={{ marginRight: '8px' }} />Login</h2>
       <form onSubmit={handleLogin}>
         <label className={styles.label}>Email</label>
         <input
