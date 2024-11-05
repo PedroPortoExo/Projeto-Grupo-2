@@ -1,70 +1,56 @@
-# Getting Started with Create React App
+# Sistema de Gerenciamento de Biblioteca 📚
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Este projeto é um sistema de gerenciamento de biblioteca desenvolvido pela equipe Grupo 2 da Step. O objetivo do sistema é facilitar o controle e a gestão de livros e usuários em uma biblioteca, permitindo a consulta, empréstimo e devolução de livros de forma simples e eficiente.
 
-## Available Scripts
+💻 ## Tecnologias Utilizadas
 
-In the project directory, you can run:
+- **React**: Biblioteca JavaScript para construir interfaces de usuário.
+- **JavaScript**: Linguagem de programação para a lógica do front-end.
+- **Bootstrap**: Framework CSS para um design responsivo e estilização.
+- **HTML/CSS**: Estruturas básicas e estilos da interface.
 
-### `npm start`
+## Funcionalidades do Sistema
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+🔷 1. Do que o sistema é feito
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- **Lista de Livros**: Mantém uma lista de todos os livros disponíveis, com informações como título, autor, categoria e quantidade de exemplares.
+- **Categorias de Livros**: Associa cada livro a uma categoria, como ficção, não-ficção, ciência, tecnologia, etc.
+- **Status dos Livros**: Indica quais livros estão disponíveis para empréstimo e quais estão emprestados, considerando a quantidade de exemplares.
+- **Controle de Empréstimos**: Gerencia o período de devolução para cada livro emprestado, permitindo múltiplos empréstimos por usuário.
+- **Lista de Usuários**: Mantém um cadastro atualizado dos usuários que podem realizar empréstimos, incluindo informações de contato e status de empréstimos.
 
-### `npm test`
+🔷 2. Como o sistema se comportará
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- **Atualização da Disponibilidade de Livros**: O sistema atualiza automaticamente o status de disponibilidade de um livro quando ele é emprestado ou devolvido.
+- **Controle de Quantidade de Exemplares**: Permite a solicitação de outros exemplares se apenas um deles estiver emprestado.
+- **Controle de Prazos de Empréstimo**: Calcula e informa quantos dias restam para a devolução, exibindo alertas se o prazo estiver próximo do vencimento.
 
-### `npm run build`
+🔷 3. Como será a interação do usuário com o sistema
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- **Consulta de Livros**: Os usuários podem visualizar uma lista de livros, filtrando por título, autor, categoria e status (disponível/emprestado).
+- **Solicitação de Empréstimo**: Usuários podem solicitar o empréstimo de livros, com exibição do prazo de devolução para cada um.
+- **Painel de Controle do Usuário**: Cada usuário terá uma área para visualizar seus empréstimos ativos e a data de devolução de cada livro.
+- **Cadastro e Gerenciamento de Usuários**: A biblioteca será responsável pelo cadastro e atualização das informações dos usuários.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+🔷 4. Outros requisitos
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- **Design Responsivo e Acessibilidade**: O sistema é intuitivo e acessível, adaptado para diferentes dispositivos.
+- **Segurança de Acesso**: O acesso ao sistema é autenticado, garantindo a segurança dos dados dos usuários e registros de empréstimos.
 
-### `npm run eject`
+🔦 ## Como Executar o Projeto
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+1. Clone este repositório:
+   ```bash
+   git clone https:[//github.com/seuusuario/sistema-gerenciamento-biblioteca.git](https://github.com/PedroPortoExo/Projeto-Grupo-2)
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+2. Navegue até o diretório do projeto:
+   ```bash
+    cd \project
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+3. Instale as dependências:
+    ```bash
+    npm install
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+4. Execute o projeto:
+    ```bash
+    npm start
