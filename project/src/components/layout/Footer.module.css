@@ -1,0 +1,11 @@
+
+footer{
+    background-color: #1A536B;
+    color: #fff;
+}
+
+.nav-link{
+    /* border: 3px solid red; */
+    color: #fff !important;
+    font-size: 1.2rem;
+}
