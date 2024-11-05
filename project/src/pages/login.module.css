@@ -1,0 +1,60 @@
+.container {
+    background-color: #1a1a1a;
+    color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 400px;
+    margin: auto;
+    text-align: center;
+  }
+  
+  .title {
+    color: #00b3ff;
+    margin-bottom: 20px;
+    text-shadow: 0 0 8px rgba(0, 179, 255, 0.8);
+  }
+  
+  .label {
+    display: block;
+    margin-top: 10px;
+  }
+  
+  .input {
+    width: 95%;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 4px;
+    border: 1px solid #00b3ff;
+    background-color: #333333;
+    color: #ffffff;
+  }
+  
+  .button {
+    background-color: #00b3ff;
+    color: #1a1a1a;
+    margin-top: 20px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .signupButton {
+    background: none;
+    color: #00b3ff;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+  }  
+  .signupText {
+    color: #e0e0e0; /* Cor clara para contraste com o fundo */
+    font-size: 14px;
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .signupText span {
+    color: #00b3ff; /* Azul para destacar a palavra "membro" */
+    font-weight: bold;
+  }
+  

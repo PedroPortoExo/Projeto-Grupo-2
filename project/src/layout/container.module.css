@@ -1,0 +1,84 @@
+/* Input, select, textarea */
+.container input, .container select, .container textarea {
+    font-family: 'Orbitron', sans-serif;
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0 20px 0;
+    border: none;
+    border-radius: 10px;
+    background: rgba(0, 0, 0, 0.6);
+    color: #ffffff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    transition: background 0.3s ease, box-shadow 0.3s ease;
+}
+
+.container input:focus, .container select:focus, .container textarea:focus {
+    outline: none;
+    background: rgba(0, 0, 0, 0.8);
+    box-shadow: 0 4px 20px rgba(0, 159, 253, 0.6);
+}
+
+/* Botões */
+.container button, .container input[type="submit"] {
+    font-family: 'Orbitron', sans-serif;
+    padding: 10px 20px;
+    background: linear-gradient(135deg, #2a2a72, #009ffd);
+    border: none;
+    border-radius: 10px;
+    color: #ffffff;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.container button:hover, .container input[type="submit"]:hover {
+    background: linear-gradient(135deg, #1b1c1d, #1e59aa);
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.5);
+}
+
+.container button:active, .container input[type="submit"]:active {
+    transform: translateY(0);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Form Labels */
+.container label {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 16px;
+    color: #00c9ff;
+    display: block;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-shadow: 0 3px 6px rgba(0, 0, 0, 0.3);
+}
+
+/* File Input */
+.container input[type="file"] {
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.6);
+    color: #ffffff;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    transition: background 0.3s ease, box-shadow 0.3s ease;
+}
+
+.container input[type="file"]:hover {
+    background: rgba(0, 0, 0, 0.8);
+    box-shadow: 0 4px 20px rgba(0, 159, 253, 0.6);
+}
+
+/* Form container spacing */
+.container form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+}

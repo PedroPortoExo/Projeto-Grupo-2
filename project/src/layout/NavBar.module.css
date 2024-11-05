@@ -1,0 +1,76 @@
+.navbar {
+  background-color: #1e1e2f;
+  padding: 15px 30px;
+  display: flex;
+  justify-content: space-between; /* Altera para deixar a logo à esquerda e o menu à direita */
+  align-items: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Estilos da logo */
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logoImage {
+  height: 50px; /* Ajuste conforme o tamanho da sua logo */
+  width: auto;
+  border-radius: 50%; /* Isso torna a imagem redonda */
+  overflow: hidden;
+}
+
+.navbarMenu {
+  list-style: none;
+  display: flex;
+  gap: 40px;
+  margin: 0;
+  padding: 0;
+}
+
+.navbarLink {
+  color: #e6e6fa;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.3rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  position: relative;
+  letter-spacing: 2px;
+  transition: all 0.3s ease-in-out;
+  padding: 8px 15px;
+  border-radius: 5px;
+}
+
+.navbarLink:hover {
+  background-color: #303045;
+  color: #00ffff;
+  transform: scale(1.05);
+  text-shadow: 0 0 10px #00ffff, 0 0 20px #00ffff;
+}
+
+.navbarLink::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #00ffff;
+  transition: width 0.4s ease-in-out;
+}
+
+.navbarLink:hover::after {
+  width: 100%;
+}
+
+/* Responsividade para dispositivos móveis */
+@media (max-width: 768px) {
+  .navbarMenu {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .navbar {
+    padding: 10px 20px;
+  }
+}

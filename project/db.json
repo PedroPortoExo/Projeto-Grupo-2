@@ -32,20 +32,14 @@
         "returnDate": "2024-11-05"
       }
     ],
-    "users": [
-      {
-        "id": 1,
-        "name": "Alice Silva",
-        "email": "alice@example.com",
-        "contact": "123-456-7890",
-        "currentLoans": [
-          {
-            "bookId": 1,
-            "borrowDate": "2024-10-29",
-            "returnDate": "2024-11-05"
-          }
-        ]
-      }
-    ]
+      "users": [
+    {
+      "id": 1,
+      "name": "User Teste",
+      "email": "user@teste.com",
+      "password": "123456",
+      "borrowedBooks": []
+    }
+  ]
   }
   
