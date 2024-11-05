@@ -1,5 +1,5 @@
 .container {
-  background-color: #128F8B; /* Cor de fundo semelhante ao navbar */
+  background-color: #128F8B;
   color: #ffffff;
   padding: 20px;
   border-radius: 8px;
@@ -17,7 +17,7 @@
 .label {
   display: block;
   margin-top: 10px;
-  color: #ffffff; /* Texto branco */
+  color: #ffffff;
 }
 
 .input {
@@ -25,8 +25,8 @@
   padding: 10px;
   margin-top: 5px;
   border-radius: 4px;
-  border: 1px solid #61A4C0; /* Borda combinando com a cor de destaque */
-  background-color: #128F8B; /* Fundo do input igual ao fundo do container */
+  border: 1px solid #61A4C0;
+  background-color: #128F8B;
   color: #ffffff;
 }
 
@@ -42,7 +42,7 @@
 
 .signupButton {
   background: none;
-  color: #61A4C0; /* Cor azul para destaque */
+  color: #61A4C0;
   border: none;
   cursor: pointer;
   margin-top: 10px;
@@ -56,6 +56,6 @@
 }
 
 .signupText span {
-  color: #61A4C0; /* Azul para destaque na palavra */
+  color: #00ffb6;
   font-weight: bold;
 }

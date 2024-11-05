@@ -22,7 +22,7 @@
 .container button, .container input[type="submit"] {
     font-family: 'Orbitron', sans-serif;
     padding: 10px 20px;
-    background: linear-gradient(135deg, #2a2a72, #009ffd);
+    background: linear-gradient(135deg, #0d807d, #00fd81);
     border: none;
     border-radius: 10px;
     color: #ffffff;
@@ -34,7 +34,7 @@
 }
 
 .container button:hover, .container input[type="submit"]:hover {
-    background: linear-gradient(135deg, #1b1c1d, #1e59aa);
+    background: linear-gradient(135deg, #51585e, #23d07b);
     transform: translateY(-3px);
     box-shadow: 0 8px 25px rgba(0, 0, 0, 0.5);
 }
@@ -48,7 +48,7 @@
 .container label {
     font-family: 'Orbitron', sans-serif;
     font-size: 16px;
-    color: #00c9ff;
+    color: #18ffc5;
     display: block;
     margin-bottom: 5px;
     text-transform: uppercase;

@@ -28,7 +28,7 @@ export default function Footer() {
                         </div>
 
                         <div className={`${styles.marginBottom3} ${styles.columnMd5} ${styles.offsetMd1}`}>
-                            <form>
+                            <form className={styles.navUl}>
                                 <h5>Subscribe to our newsletter</h5>
                                 <p>Monthly digest of what's new and exciting from us.</p>
                                 <div className={styles.flexContainer}>
