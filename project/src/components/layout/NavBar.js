@@ -1,15 +1,21 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link , useNavigate } from 'react-router-dom';
+import { useAuth } from '../AuthContext';
 import styles from './NavBar.module.css';
 import logo from './assets/images/logo.svg'; 
 
-function Navbar({ user, handleLogout }) {
+export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const { user, logout } = useAuth();
+  const navigate = useNavigate();
 
-  const toggleMenu = () => {
+  const Menu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
-
+  const sair = () => {
+    logout();
+    navigate('/');
+  };
   return (
     <nav className={styles.navbar}>
       <div className={styles.logo}>
@@ -17,7 +23,7 @@ function Navbar({ user, handleLogout }) {
           <img src={logo} alt="Logo do Site" className={styles.logoImage} />
         </Link>
       </div>
-      <div className={styles.hamburger} onClick={toggleMenu}>
+      <div className={styles.hamburger} onClick={Menu}>
         <span></span>
         <span></span>
         <span></span>
@@ -39,7 +45,7 @@ function Navbar({ user, handleLogout }) {
           <>
             <li className={styles.navbarLink}>Olá, {user.name}</li>
             <li>
-              <button onClick={handleLogout} className={styles.navbarLink}>Sair</button>
+              <button onClick={sair} className={styles.navbarLinkB}>Sair</button>
             </li>
           </>
         ) : (
@@ -51,5 +57,3 @@ function Navbar({ user, handleLogout }) {
     </nav>
   );
 }
-
-export default Navbar;

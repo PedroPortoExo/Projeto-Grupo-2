@@ -25,6 +25,7 @@
   gap: 40px;
   margin: 0;
   padding: 0;
+  align-items: center;
 }
 
 .navbarMenu li {
@@ -64,6 +65,29 @@
 
 .navbarLink:hover::after {
   width: 100%;
+}
+.navbarLinkB{
+  color: #ffffff;
+  background: linear-gradient(90deg, #0d807d, #00fd81 100%);
+  border: none;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+}
+
+.navbarLinkB:hover{
+  background: linear-gradient(90deg, #07c7c1, #00fd2a 100%);
+  transform: scale(1.05);
+}
+.navbarLinkB:focus,
+.navbarLinkB:active {
+  outline: none;
+  box-shadow: 0 0 0 4px rgba(38, 255, 233, 0.4);
 }
 
 /* Estilos para o botão de hamburguer */
