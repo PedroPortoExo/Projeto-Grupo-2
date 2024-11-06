@@ -7,7 +7,7 @@
       "category": "ficção",
       "copiesAvailable": 5,
       "totalCopies": 5,
-      "coverImage": "1984.jpg" 
+      "coverImage": "1984.jpg"
     },
     {
       "id": 2,
@@ -20,10 +20,22 @@
     }
   ],
   "categories": [
-    { "id": 1, "name": "ficção" },
-    { "id": 2, "name": "Romance" },
-    { "id": 3, "name": "ciência" },
-    { "id": 4, "name": "tecnologia" }
+    {
+      "id": 1,
+      "name": "ficção"
+    },
+    {
+      "id": 2,
+      "name": "Romance"
+    },
+    {
+      "id": 3,
+      "name": "ciência"
+    },
+    {
+      "id": 4,
+      "name": "tecnologia"
+    }
   ],
   "loans": [],
   "users": [
@@ -31,6 +43,13 @@
       "id": 1,
       "name": "User Teste",
       "email": "user@teste.com",
+      "password": "123456",
+      "borrowedBooks": []
+    },
+    {
+      "id": 1730853263242,
+      "name": "pedro",
+      "email": "pedro@test.com",
       "password": "123456",
       "borrowedBooks": []
     }
