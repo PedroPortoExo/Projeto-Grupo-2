@@ -21,7 +21,7 @@
   ],
   "categories": [
     { "id": 1, "name": "ficção" },
-    { "id": 2, "name": "não-ficção" },
+    { "id": 2, "name": "Romance" },
     { "id": 3, "name": "ciência" },
     { "id": 4, "name": "tecnologia" }
   ],

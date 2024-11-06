@@ -1,10 +1,11 @@
 .navbar {
-  background-color: #128F8B; /* Cor de fundo similar ao header */
+  background-color: #128F8B;
   padding: 15px 30px;
   display: flex;
-  justify-content: space-between; /* Alinhamento da logo à esquerda e menu à direita */
+  justify-content: space-between;
   align-items: center;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  position: relative;
 }
 
 .logo {
@@ -13,8 +14,8 @@
 }
 
 .logoImage {
-  width:10vw;
-  height:8vh;
+  width: 10vw;
+  height: 8vh;
   overflow: hidden;
 }
 
@@ -26,8 +27,12 @@
   padding: 0;
 }
 
+.navbarMenu li {
+  list-style: none;
+}
+
 .navbarLink {
-  color: #fff; /* Mudança para cor branca */
+  color: #fff;
   font-family: 'Roboto', sans-serif;
   font-size: 1.3rem;
   text-transform: uppercase;
@@ -40,8 +45,8 @@
 }
 
 .navbarLink:hover {
-  background-color: #61A4C0; /* Cor de fundo similar ao header */
-  color: #000; /* Cor do texto ao passar o mouse */
+  background-color: #61A4C0;
+  color: #000;
   transform: scale(1.05);
   text-shadow: 0 0 10px #61A4C0, 0 0 20px #61A4C0;
 }
@@ -61,35 +66,53 @@
   width: 100%;
 }
 
+/* Estilos para o botão de hamburguer */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.hamburger span {
+  height: 3px;
+  width: 25px;
+  background: #fff;
+  margin: 4px;
+  transition: 0.3s;
+}
+
 /* Responsividade para dispositivos móveis */
 @media (max-width: 768px) {
-  .navbarMenu {
-    flex-direction: column;
-    gap: 20px;
-  }
-
   .navbar {
     padding: 10px 20px;
   }
-}
 
-/* Categoria do header */
-.categoria {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #61A4C0; /* Cor de fundo igual ao do navbar */
-  color: #fff;
-  padding: 3%;
-}
+  .navbarMenu {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: #024b49de;
+    padding: 10px 0;
+  }
 
-h1 {
-  font-size: 3.5rem;
-  margin: 0;
-}
 
-a {
-  color: #fff;
-  text-decoration: none;
+  .navbarMenu.active {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid white;
+  }
+
+  .navbarLink {
+    padding: 10px 0;
+    text-align: center;
+  }
+
+  .hamburger {
+    display: flex;
+  }
 }

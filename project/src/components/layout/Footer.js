@@ -27,17 +27,6 @@ export default function Footer() {
                             </ul>
                         </div>
 
-                        <div className={`${styles.marginBottom3} ${styles.columnMd5} ${styles.offsetMd1}`}>
-                            <form className={styles.navUl}>
-                                <h5>Subscribe to our newsletter</h5>
-                                <p>Monthly digest of what's new and exciting from us.</p>
-                                <div className={styles.flexContainer}>
-                                    <label htmlFor="newsletter1" className={styles.visuallyHidden}>Email address</label>
-                                    <input id="newsletter1" type="text" className={styles.formControl} placeholder="Email address" />
-                                    <button className={styles.btnPrimary} type="button">Subscribe</button>
-                                </div>
-                            </form>
-                        </div>
                     </div>
 
                     <div className={styles.footerBottom}>

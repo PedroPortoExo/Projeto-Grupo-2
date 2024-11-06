@@ -1,28 +1,13 @@
-import { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import styles from './NavBar.module.css';
-import logo from './assets/images/logo.svg';
+import logo from './assets/images/logo.svg'; 
 
-export default function Navbar() {
-  const [user, setUser] = useState(null);
+function Navbar({ user, handleLogout }) {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-  // Simulação de login ao carregar a Navbar
-  useEffect(() => {
-    const login = async () => {
-      try {
-        const response = await fetch("http://localhost:5000/users/1");
-        const data = await response.json();
-        setUser(data); // Define o usuário logado com o dado da API
-      } catch (error) {
-        console.error("Erro ao buscar usuário:", error);
-      }
-    };
-
-    login();
-  }, []);
-
-  const handleLogout = () => {
-    setUser(null);
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
   };
 
   return (
@@ -32,7 +17,12 @@ export default function Navbar() {
           <img src={logo} alt="Logo do Site" className={styles.logoImage} />
         </Link>
       </div>
-      <ul className={styles.navbarMenu}>
+      <div className={styles.hamburger} onClick={toggleMenu}>
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <ul className={`${styles.navbarMenu} ${isMenuOpen ? styles.active : ''}`}>
         <li>
           <Link to="/" className={styles.navbarLink}>Início</Link>
         </li>
@@ -41,7 +31,7 @@ export default function Navbar() {
         </li>
         <li>
           <Link to="/Acervo" className={styles.navbarLink}>Acervo</Link>
-          </li>
+        </li>
         <li>
           <Link to="/Sobre-nos" className={styles.navbarLink}>Sobre nós</Link>
         </li>
@@ -61,3 +51,5 @@ export default function Navbar() {
     </nav>
   );
 }
+
+export default Navbar;
