@@ -1,0 +1,71 @@
+Principais Entidades do Sistema
+Livro: Representa cada livro no sistema, com detalhes como título, autor, categoria, e quantidade de exemplares.
+Categoria: Agrupa os livros em categorias como ficção, ciência, etc.
+Usuário: Representa uma pessoa que se cadastrou e pode fazer empréstimos.
+Empréstimo: Representa cada empréstimo, registrando o livro, o usuário e a data de devolução.
+
+Estrutura do Domínio
+Livro: Representa os livros disponíveis para empréstimo, com detalhes mínimos para exibição e controle de disponibilidade.
+Categoria: Agrupa os livros em temas ou gêneros.
+Usuário: Representa uma pessoa que pode fazer login e realizar empréstimos.
+Empréstimo: Representa uma transação básica de empréstimo com informações mínimas.
+
+1. Estrutura de um Livro
+const livros = [
+  {
+    id: 1,
+    titulo: "Dom Casmurro",
+    autor: "Machado de Assis",
+    categoria: "Ficção",
+    disponivel: true,
+  },
+  {
+    id: 2,
+    titulo: "O Pequeno Príncipe",
+    autor: "Antoine de Saint-Exupéry",
+    categoria: "Infantil",
+    disponivel: false,
+  },
+  
+];
+
+2. Estrutura de Categorias
+ const categorias = ["Ficção", "Infantil", "Ciência", "Tecnologia", "Biografia"];
+
+3. Estrutura de um Usuário
+ const usuario = {
+  id: 1,
+  nome: "João Silva",
+  email: "joao@example.com",
+  autenticado: true, // Indica se o usuário está logado
+};
+
+
+4. Estrutura de um Empréstimo
+ 4. Estrutura de um Empréstimo
+const emprestimos = [
+  {
+    id: 1,
+    livroId: 1, // ID do livro emprestado
+    usuarioId: 1, // ID do usuário que fez o empréstimo
+    dataEmprestimo: "2024-11-01",
+    dataDevolucao: "2024-11-15",
+    status: "ativo", // Outros valores podem ser "devolvido" ou "atrasado"
+  },
+  
+];
+
+Operações do Sistema
+Listar Livros Disponíveis para Empréstimo:
+
+Filtra o array livros para exibir apenas os livros onde disponivel é true.
+Realizar Empréstimo:
+
+Localiza o livro pelo id e altera disponivel para false.
+Adiciona um novo item no array emprestimos com as informações de livroId, usuarioId, e datas de empréstimo e devolução.
+Devolver Livro:
+
+Localiza o empréstimo pelo livroId e usuarioId no array emprestimos e marca o status como "devolvido".
+Atualiza o livro em livros para que disponivel seja true novamente.
+
+
