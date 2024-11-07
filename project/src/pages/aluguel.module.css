@@ -1,0 +1,58 @@
+.container {
+    display: flex;
+    background-color:#1A536B;
+    padding: 40px;
+    border-radius: 10px;
+    max-width: 1080px;
+    width: 100%;
+    color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.book-cover img {
+    width: 300px;
+    height: auto;
+    border-radius: 5px;
+}
+
+.book-info {
+    margin-left: 30px;
+    color: #ffffff;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.book-info h1 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #ffffff;
+}
+
+.book-info p {
+    margin-bottom: 12px;
+    font-size: 18px;
+}
+
+.rent-button {
+    align-self: flex-end;
+    padding: 12px 24px;
+    background-color: #128F8B;
+    color: white;
+    border: 2px solid #ffffff;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.rent-button:hover {
+    background-color:#63cc63;
+}
+
+.description {
+    margin-top: 20px;
+    font-size: 16px;
+    color: #ffffff;
+    border-top: 1px solid #ffffff;
+    padding-top: 15px;
+}
