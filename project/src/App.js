@@ -1,9 +1,7 @@
 import "./App.css";
-// import Form from './components/Form';
 
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import { AuthProvider } from './components/AuthContext';
-// import Home from "./components/pages/Home";
 import NavBar from "./components/layout/NavBar";
 import Footer from "./components/layout/Footer";
 import Container from "./components/layout/Container";
@@ -25,7 +23,7 @@ function App() {
               <Routes>
                 <Route path="/" element={<Login />} />
                 <Route path="/Home" element={<Home />} />
-                <Route path="/Aluguel" element={<Aluguel />} />
+                <Route path="/Aluguel/:id" element={<Aluguel />} />
                 {/* <Route path="*" element={<NotFound />} /> */}
               </Routes>
             </Container>

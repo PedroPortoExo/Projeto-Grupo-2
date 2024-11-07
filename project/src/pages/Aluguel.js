@@ -1,25 +1,64 @@
+import React, { useState, useEffect } from 'react';
 import styles from './aluguel.module.css';
+import { useAuth } from '../components/AuthContext';
+import { useParams } from 'react-router-dom';
 
 export default function Aluguel() {
-    return (
-        <div className={styles.container}>
-            <div className={styles['book-cover']}>
-                <img src="brief-history-of-time.jpg" alt="Capa do livro 'A Brief History of Time'" />
-            </div>
-            <div className={styles['book-info']}>
-                <h1>A Brief History of Time</h1>
-                <p>Autor: Stephen Hawking</p>
-                <p>Editora: Bantam Dell Publishing Group</p>
-                <p>Edição: 1988</p>
-                <p>Gênero: Cosmologia, Ciência Popular</p>
-                <p>Livros disponíveis: 4</p>
-                <p>Status: <span style={{ color: '#63cc63', fontWeight: 'bolder' }}>Disponível</span></p>
-                <button className={styles['rent-button']}>Alugar</button>
-                <div className={styles.description}>
-                    <p>Descrição:</p>
-                    <p>O livro aborda conceitos fundamentais sobre a estrutura, origem, desenvolvimento e destino do Universo. Hawking explica temas complexos como o Big Bang, buracos negros, relatividade geral e mecânica quântica de uma forma acessível para leitores sem conhecimento prévio em física.</p>
-                </div>
-            </div>
+  const { user, updateUser } = useAuth();
+  const { id } = useParams();
+  const [book, setBook] = useState(null);
+
+  useEffect(() => {
+    const fetchBook = async () => {
+      const response = await fetch(`http://localhost:5000/books/${id}`);
+      const data = await response.json();
+      setBook(data);
+    };
+    fetchBook();
+  }, [id]);
+
+  const handleRent = async () => {
+    if (user && book) {
+      const currentDate = new Date();
+      const dueDate = new Date();
+      dueDate.setDate(currentDate.getDate() + 30);
+
+      const rentedBook = {
+        bookId: book.id,
+        title: book.title,
+        dueDate: dueDate.toISOString().split('T')[0],
+      };
+
+      const updatedUser = {
+        ...user,
+        borrowedBooks: [...user.borrowedBooks, rentedBook],
+      };
+
+      await updateUser(updatedUser);
+      alert(`Livro "${book.title}" alugado com sucesso!`);
+    }
+  };
+
+  if (!book) return <p>Carregando...</p>;
+
+  const imagePath = process.env.PUBLIC_URL + "/images/" + book.coverImage;
+
+  return (
+    <div className={styles.container}>
+      <div className={styles['book-cover']}>
+        <img src={imagePath} alt={`Capa do livro ${book.title}`} />
+      </div>
+      <div className={styles['book-info']}>
+        <h1>{book.title}</h1>
+        <p>Autor: {book.author}</p>
+        <p>Gênero: {book.category}</p>
+        <p>Livros disponíveis: {book.copiesAvailable}</p>
+        <button onClick={handleRent} className={styles['rent-button']}>Alugar</button>
+        <div className={styles.description}>
+          <p>Descrição:</p>
+          <p>{book.description}</p>
         </div>
-    );
+      </div>
+    </div>
+  );
 }
