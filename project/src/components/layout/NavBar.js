@@ -1,8 +1,8 @@
-import React, { useState } from 'react';
-import { Link , useNavigate } from 'react-router-dom';
-import { useAuth } from '../AuthContext';
-import styles from './NavBar.module.css';
-import logo from './assets/images/logo.svg'; 
+import React, { useState } from "react";
+import { Link, useNavigate } from "react-router-dom";
+import { useAuth } from "../AuthContext";
+import styles from "./NavBar.module.css";
+import logo from "./assets/images/logo.svg";
 
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -14,7 +14,7 @@ export default function Navbar() {
   };
   const sair = () => {
     logout();
-    navigate('/');
+    navigate("/");
   };
   return (
     <nav className={styles.navbar}>
@@ -28,29 +28,44 @@ export default function Navbar() {
         <span></span>
         <span></span>
       </div>
-      <ul className={`${styles.navbarMenu} ${isMenuOpen ? styles.active : ''}`}>
-        <li>
-          <Link to="/" className={styles.navbarLink}>Início</Link>
+      <ul className={`${styles.navbarMenu} ${isMenuOpen ? styles.active : ""}`}>
+        <li className={styles.navbarLink}>
+          <span className={styles.navbarTitle}>BookVirtua</span>
         </li>
         <li>
-          <Link to="/Home" className={styles.navbarLink}>Home</Link>
-        </li>
-        <li>
-          <Link to="/Acervo" className={styles.navbarLink}>Acervo</Link>
-        </li>
-        <li>
-          <Link to="/Sobre-nos" className={styles.navbarLink}>Sobre nós</Link>
+          <Link to="/Sobre-nos" className={styles.navbarLink}>
+            Sobre nós
+          </Link>
         </li>
         {user ? (
           <>
+            <li>
+              <Link to="/Home" className={styles.navbarLink}>
+                Home
+              </Link>
+            </li>
+            <li>
+              <Link to="/Acervo" className={styles.navbarLink}>
+                Acervo
+              </Link>
+            </li>
+            <li>
+              <Link to="/ListLivros" className={styles.navbarLink}>
+                Seus Livros
+              </Link>
+            </li>
             <li className={styles.navbarLink}>Olá, {user.name}</li>
             <li>
-              <button onClick={sair} className={styles.navbarLinkB}>Sair</button>
+              <button onClick={sair} className={styles.navbarLinkB}>
+                Sair
+              </button>
             </li>
           </>
         ) : (
           <li>
-            <Link to="/" className={styles.navbarLink}>Login</Link>
+            <Link to="/" className={styles.navbarLink}>
+              Login
+            </Link>
           </li>
         )}
       </ul>
