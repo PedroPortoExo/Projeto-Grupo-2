@@ -17,7 +17,8 @@
     box-shadow: 0 4px 20px rgba(0, 159, 253, 0.6);
 }
 
-.container button, .container input[type="submit"] {
+/* Estilo apenas para input[type="submit"] */
+.container input[type="submit"] {
     font-family: 'Orbitron', sans-serif;
     padding: 10px 20px;
     background: linear-gradient(135deg, #0d807d, #00fd81);
@@ -31,16 +32,17 @@
     cursor: pointer;
 }
 
-.container button:hover, .container input[type="submit"]:hover {
+.container input[type="submit"]:hover {
     background: linear-gradient(135deg, #51585e, #23d07b);
     transform: translateY(-3px);
     box-shadow: 0 8px 25px rgba(0, 0, 0, 0.5);
 }
 
-.container button:active, .container input[type="submit"]:active {
+.container input[type="submit"]:active {
     transform: translateY(0);
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
 }
+
 
 /* Form Labels */
 .container label {

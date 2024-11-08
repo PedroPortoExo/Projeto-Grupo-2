@@ -2,11 +2,12 @@ import "./App.css";
 
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import { AuthProvider } from './components/AuthContext';
-import NavBar from "./components/layout/NavBar";
-import Footer from "./components/layout/Footer";
-import Container from "./components/layout/Container";
+import NavBar from "./layout/NavBar";
+import Footer from "./layout/Footer";
+import Container from "./layout/Container";
 import Login from "./pages/Login";
-import Home from "./components/pages/Home";
+import Home from "./pages/Home";
+import Acervo from "./pages/Acervo";
 import Aluguel from "./pages/Aluguel";
 
 function App() {
@@ -23,6 +24,7 @@ function App() {
               <Routes>
                 <Route path="/" element={<Login />} />
                 <Route path="/Home" element={<Home />} />
+                <Route path="/Acervo" element={<Acervo />} />
                 <Route path="/Aluguel/:id" element={<Aluguel />} />
                 {/* <Route path="*" element={<NotFound />} /> */}
               </Routes>

@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
-import { useAuth } from "../AuthContext";
+import { useAuth } from "../components/AuthContext";
 import styles from "./NavBar.module.css";
-import logo from "./assets/images/logo.svg";
+import logo from "../assets/images/logo.svg";
 
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);

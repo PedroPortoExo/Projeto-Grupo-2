@@ -31,6 +31,7 @@
 }
 
 .button {
+  width: 50%;
   background-color: #61A4C0; /* Botão com cor semelhante ao hover do navbar */
   color: #1a1a1a; /* Cor do texto escuro para contraste */
   margin-top: 20px;

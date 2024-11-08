@@ -6,12 +6,13 @@
   align-items: center;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
   position: relative;
+  /* border: 3px solid; */
 }
 .navbarTitle {
   color: inherit;
   text-decoration: none; 
   cursor: default;
-  font-weight: bold;
+  /* font-weight: bold; */
 }
 
 .logo {
@@ -41,7 +42,7 @@
 .navbarLink {
   color: #fff;
   font-family: 'Roboto', sans-serif;
-  font-size: 1.3rem;
+  font-size: 1.rem;
   text-transform: uppercase;
   text-decoration: none;
   position: relative;
