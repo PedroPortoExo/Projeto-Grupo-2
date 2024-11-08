@@ -1,24 +1,31 @@
-.container input, .container select, .container textarea {
+.container input,
+.container select,
+.container textarea {
     font-family: 'Orbitron', sans-serif;
     width: 95%;
     padding: 10px;
     margin: 10px 0 20px 0;
     border: none;
     border-radius: 10px;
-    background: rgba(0, 0, 0, 0.6);
-    color: #ffffff;
+    background: linear-gradient(135deg, #20b0be, #26b5ae);
+    color: #f0f8ff;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-    transition: background 0.3s ease, box-shadow 0.3s ease;
+    transition: background 0.3s ease, box-shadow 0.3s ease, text-shadow 0.3s ease;
 }
 
-.container input:focus, .container select:focus, .container textarea:focus {
+.container input:focus,
+.container select:focus,
+.container textarea:focus {
     outline: none;
-    background: rgba(0, 0, 0, 0.8);
-    box-shadow: 0 4px 20px rgba(0, 159, 253, 0.6);
+    background: linear-gradient(135deg, #20ebff, #18e8de);
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0px 30px #61A4C0;
 }
 
 /* Estilo apenas para input[type="submit"] */
-.container button, .container input[type="submit"] {
+.container button,
+.container input[type="submit"] {
     font-family: 'Orbitron', sans-serif;
     padding: 10px 20px;
     background: linear-gradient(135deg, #7fc3e0, #61A4C0);
@@ -32,13 +39,15 @@
     cursor: pointer;
 }
 
-.container button:hover, .container input[type="submit"]:hover {
+.container button:hover,
+.container input[type="submit"]:hover {
     background: linear-gradient(135deg, #30b3ec, #30aee5);
     transform: translateY(-3px);
     box-shadow: 0 8px 25px rgba(0, 0, 0, 0.5);
 }
 
-.container button:active, .container input[type="submit"]:active {
+.container button:active,
+.container input[type="submit"]:active {
     transform: translateY(0);
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
 }
@@ -86,7 +95,8 @@
 /* --------------------------------------------------Responsivo-------------------------------------------------------------------------------- */
 @media (max-width: 768px) {
     .container form {
-        max-width: 90%; /* Reduz a largura para 90% da tela no mobile */
+        max-width: 90%;
+        /* Reduz a largura para 90% da tela no mobile */
         padding: 15px;
     }
 
@@ -102,30 +112,30 @@
     .container button,
     .container input[type="submit"] {
         padding: 8px 15px;
-        font-size: 0.9rem; 
+        font-size: 0.9rem;
     }
 
     .container label {
-        font-size: 14px; 
+        font-size: 14px;
     }
 }
 
 @media (max-width: 480px) {
     .container form {
-        max-width: 95%; 
+        max-width: 95%;
         padding: 10px;
     }
 
     .container input,
     .container select,
     .container textarea {
-        font-size:1.8rem; 
+        font-size: 1.8rem;
         padding: 6px;
     }
 
     .container button,
     .container input[type="submit"] {
-        padding: 6px 10px; 
+        padding: 6px 10px;
         font-size: 0.8rem;
     }
 
