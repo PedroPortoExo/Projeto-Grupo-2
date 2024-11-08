@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 import styles from './Footer.module.css';
-import {  Facebook, Messenger, Twitter,Instagram, Linkedin, CopyRight } from '../Icons'
+import {  Facebook, Messenger, Twitter,Instagram, Linkedin, CopyRight } from '../components/Icons'
 
 export default function Footer() {
     return (
