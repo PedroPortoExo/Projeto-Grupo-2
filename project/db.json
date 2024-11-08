@@ -73,6 +73,13 @@
     {
       "id": 4,
       "name": "tecnologia"
+    },{
+      "id": 5,
+      "name": "fantasia"
+    },
+    {
+      "id": 6,
+      "name": "Infantil"
     }
   ],
   "users": [
