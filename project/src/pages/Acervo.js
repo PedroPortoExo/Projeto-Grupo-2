@@ -62,18 +62,11 @@ function Acervo() {
                 <nav className={styles.filtro}>
                     <div>
                         <input 
-                            className="form-control" 
-                            list="datalistOptions" 
-                            id="exampleDataList" 
-                            placeholder="Pesquise por título ou autor..." 
+                            className={styles.form_input} 
+                            list="" 
+                            id="" 
+                            placeholder="PESQUISE POR TÍTULO OU AUTOR..." 
                         />
-                        <datalist id="datalistOptions">
-                            <option value="San Francisco" />
-                            <option value="New York" />
-                            <option value="Seattle" />
-                            <option value="Los Angeles" />
-                            <option value="Chicago" />
-                        </datalist>
                     </div>
                 </nav>
 

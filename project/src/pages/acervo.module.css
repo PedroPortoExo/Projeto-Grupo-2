@@ -34,6 +34,13 @@
     border: 1px solid #128F8B;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   }
+
+  .filtro input:focus{
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    color: #504c4c;
+    text-transform: uppercase;
+  }
   
   /* Datalist */
   .filtro datalist {
