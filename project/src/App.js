@@ -8,6 +8,7 @@ import Footer from "./layout/Footer";
 import Container from "./layout/Container";
 import Login from "./pages/Login";
 import Home from "./pages/Home";
+import Acervo from "./pages/Acervo";
 import Aluguel from "./pages/Aluguel";
 
 function App() {
@@ -24,6 +25,7 @@ function App() {
               <Routes>
                 <Route path="/" element={<Login />} />
                 <Route path="/Home" element={<Home />} />
+                <Route path="/Acervo" element={<Acervo />} />
                 <Route path="/Aluguel/:id" element={<Aluguel />} />
                 {/* <Route path="*" element={<NotFound />} /> */}
               </Routes>

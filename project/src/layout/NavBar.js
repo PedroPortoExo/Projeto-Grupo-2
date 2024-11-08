@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { useAuth } from "../components/AuthContext";
 import styles from "./NavBar.module.css";
-import logo from "./assets/images/logo.svg";
+import logo from "../assets/images/logo.svg";
 
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -54,7 +54,9 @@ export default function Navbar() {
                 Seus Livros
               </Link>
             </li>
-            <li className={styles.navbarLink}>Olá, {user.name}</li>
+            <li className={styles.navbarLink}>
+          <span className={styles.navbarTitle}>Olá, {user.name}</span>
+        </li>
             <li>
               <button onClick={sair} className={styles.navbarLinkB}>
                 Sair
