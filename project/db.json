@@ -1,101 +1,108 @@
 {
-    "books": [
-      {
-        "id": 1,
-        "title": "1984",
-        "author": "George Orwell",
-        "publisher": "Secker & Warburg",
-        "edition": "1ª edição",
-        "genre": "Ficção distópica",
-        "category": "Ficção",
-        "copiesAvailable": 5,
-        "totalCopies": 5,
-        "coverImage": "livroTest1.jpg",
-        "description": "Um clássico da literatura distópica que explora os perigos do totalitarismo e a opressão governamental.",
-        "publicationYear": 1949
-      },
-      {
-        "id": 2,
-        "title": "A Brief History of Time",
-        "author": "Stephen Hawking",
-        "publisher": "Bantam Dell Publishing Group",
-        "edition": "1ª edição",
-        "genre": "Cosmologia, Ciência Popular",
-        "category": "Ciência",
-        "copiesAvailable": 2,
-        "totalCopies": 2,
-        "coverImage": "brief-history-of-time.jpg",
-        "description": "Explora temas como o Big Bang, buracos negros, relatividade geral e mecânica quântica de forma acessível para leigos.",
-        "publicationYear": 1988
-      },
-      {
-        "id": 3,
-        "title": "To Kill a Mockingbird",
-        "author": "Harper Lee",
-        "publisher": "J.B. Lippincott & Co.",
-        "edition": "1ª edição",
-        "genre": "Romance",
-        "category": "Ficção",
-        "copiesAvailable": 3,
-        "totalCopies": 3,
-        "coverImage": "to-kill-a-mockingbird.jpg",
-        "description": "Um romance poderoso sobre racismo e injustiça no sul dos Estados Unidos.",
-        "publicationYear": 1960
-      },
-      {
-        "id": 4,
-        "title": "The Origin of Species",
-        "author": "Charles Darwin",
-        "publisher": "John Murray",
-        "edition": "1ª edição",
-        "genre": "Ciência",
-        "category": "Ciência",
-        "copiesAvailable": 1,
-        "totalCopies": 1,
-        "coverImage": "origin-of-species.jpg",
-        "description": "A obra seminal que introduziu a teoria da evolução das espécies por seleção natural.",
-        "publicationYear": 1859
-      }
-    ],
-  "categories": [
+  "books": [
     {
-      "id": 1,
-      "name": "ficção"
+      "id": "1",
+      "title": "1984",
+      "author": "George Orwell",
+      "publisher": "Secker & Warburg",
+      "edition": "1ª edição",
+      "genre": "Ficção distópica",
+      "category": "Ficção",
+      "copiesAvailable": 4,
+      "totalCopies": 5,
+      "coverImage": "img2.jpg",
+      "description": "Um clássico da literatura distópica que explora os perigos do totalitarismo e a opressão governamental.",
+      "publicationYear": 1949
     },
     {
-      "id": 2,
+      "id": "2",
+      "title": "A Brief History of Time",
+      "author": "Stephen Hawking",
+      "publisher": "Bantam Dell Publishing Group",
+      "edition": "1ª edição",
+      "genre": "Cosmologia, Ciência Popular",
+      "category": "Ciência",
+      "copiesAvailable": 2,
+      "totalCopies": 2,
+      "coverImage": "img3.jpg",
+      "description": "Explora temas como o Big Bang, buracos negros, relatividade geral e mecânica quântica de forma acessível para leigos.",
+      "publicationYear": 1988
+    },
+    {
+      "id": "3",
+      "title": "To Kill a Mockingbird",
+      "author": "Harper Lee",
+      "publisher": "J.B. Lippincott & Co.",
+      "edition": "1ª edição",
+      "genre": "Romance",
+      "category": "Ficção",
+      "copiesAvailable": 3,
+      "totalCopies": 3,
+      "coverImage": "img4.jpg",
+      "description": "Um romance poderoso sobre racismo e injustiça no sul dos Estados Unidos.",
+      "publicationYear": 1960
+    },
+    {
+      "id": "4",
+      "title": "The Origin of Species",
+      "author": "Charles Darwin",
+      "publisher": "John Murray",
+      "edition": "1ª edição",
+      "genre": "Ciência",
+      "category": "Ciência",
+      "copiesAvailable": 1,
+      "totalCopies": 1,
+      "coverImage": "img5.jpg",
+      "description": "A obra seminal que introduziu a teoria da evolução das espécies por seleção natural.",
+      "publicationYear": 1859
+    }
+  ],
+  "categories": [
+    {
+      "id": "1",
+      "name": "Ficção"
+    },
+    {
+      "id": "2",
       "name": "Romance"
     },
     {
-      "id": 3,
-      "name": "ciência"
+      "id": "3",
+      "name": "Ciência"
     },
     {
-      "id": 4,
-      "name": "tecnologia"
-    },{
-      "id": 5,
-      "name": "fantasia"
+      "id": "4",
+      "name": "Tecnologia"
     },
     {
-      "id": 6,
+      "id": "5",
+      "name": "Fantasia"
+    },
+    {
+      "id": "6",
       "name": "Infantil"
     }
   ],
   "users": [
     {
-      "id": 1,
+      "id": "1",
       "name": "User Teste",
       "email": "user@teste.com",
       "password": "123456",
       "borrowedBooks": []
     },
     {
-      "id": 1730853263242,
+      "id": "1730853263242",
       "name": "pedro",
       "email": "pedro@test.com",
       "password": "123456",
-      "borrowedBooks": []
+      "borrowedBooks": [
+        {
+          "bookId": "1",
+          "title": "1984",
+          "dueDate": "2024-12-08"
+        }
+      ]
     }
   ]
 }

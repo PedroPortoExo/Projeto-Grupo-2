@@ -1,107 +1,66 @@
+import { useState, useEffect } from 'react';
 import styles from './acervo.module.css'; // Importando o CSS Module
-import img1 from '../assets/images/img1.jpg';
-import img2 from '../assets/images/img2.jpg';
-import img3 from '../assets/images/img3.jpg';
-import img4 from '../assets/images/img4.jpg';
-import img5 from '../assets/images/img5.jpg';
-import img6 from '../assets/images/img6.jpg';
-import img7 from '../assets/images/img7.jpg';
-import img8 from '../assets/images/img8.jpg';
-
 
 function Acervo() {
+    const [livros, setLivros] = useState([]);
+    const [categorias, setCategorias] = useState([]);
+    const [autores, setAutores] = useState([]);
+    const [filtroCategoria, setFiltroCategoria] = useState('');
+    const [filtroAutor, setFiltroAutor] = useState('');
 
-    const livros = [
-        {
-            imagem: img1,
-            titulo: 'FUNDAMENTOS DA NEUROPSCOL....',
-            autor: 'Raphael Moroz Teixeira'
-        },
-        {
-            imagem: img2,
-            titulo: 'ME CHAMO MILAGRE',
-            autor: ' Augusto Cury'
-        },
-        {
-            imagem: img3,
-            titulo: 'Uma história concisa do Oriente Médio',
-            autor: 'Artur G. Jr'
-        },
-        {
-            imagem: img4,
-            titulo: 'ANEL DE VIDRO',
-            autor: 'Ana Luisa Escorel'
-        },
-        {
-            imagem: img5,
-            titulo: 'ANEL DE VIDRO',
-            autor: 'Ana Luisa Escorel'
-        },
-        {
-            imagem: img6,
-            titulo: 'NEXUS',
-            autor: 'Yuval Noah'
-        },
-        {
-            imagem: img7,
-            titulo: 'O POBRE DE DIREITA',
-            autor: 'Jessé Souza'
-        },
-        {
-            imagem: img8,
-            titulo: 'AINDA ESTOU AQUI',
-            autor: 'Marcelo Rubens Paiva'
-        },
-         
-    ];
+    useEffect(() => {
+        fetch('http://localhost:5000/books')
+            .then((response) => response.json())
+            .then((data) => setLivros(data));
+        
+        fetch('http://localhost:5000/categories')
+            .then((response) => response.json())
+            .then((data) => setCategorias(data));
+
+        fetch('http://localhost:5000/books')
+            .then((response) => response.json())
+            .then((data) => {
+                const uniqueAuthors = [...new Set(data.map(book => book.author))];
+                setAutores(uniqueAuthors);
+            });
+    }, []);
 
     return (
         <main className={styles.mainContent}>
-             <section className={styles.section_fitro}>
-                {/* Filtro de Busca */}
+            <section className={styles.section_filtro}>
                 <nav className={styles.filtro}>
                     <div>
                         <input 
                             className={styles.form_input} 
-                            list="" 
-                            id="" 
                             placeholder="PESQUISE POR TÍTULO OU AUTOR..." 
                         />
                     </div>
                 </nav>
 
-                {/* Categorias */}
+                {/* Filtro de Categorias e Autores */}
                 <nav className={styles.categorias}>
                     <div className="col">
-                        <select className="form-select form-select-sm" aria-label="Seleção de Categoria">
-                            <option defaultValue>Selecione a categoria</option>
-                            <option value="1">Categoria 1</option>
-                            <option value="2">Categoria 2</option>
-                            <option value="3">Categoria 3</option>
+                        <select 
+                            className="form-select form-select-sm" 
+                            onChange={(e) => setFiltroCategoria(e.target.value)}
+                        >
+                            <option value="">Selecione a categoria</option>
+                            {categorias.map((categoria) => (
+                                <option key={categoria.id} value={categoria.name}>
+                                    {categoria.name}
+                                </option>
+                            ))}
                         </select>
                     </div>
                     <div className="col">
-                        <select className="form-select form-select-sm" aria-label="Seleção de Autor">
-                            <option defaultValue>Selecione o Autor</option>
-                            <option value="1">Autor 1</option>
-                            <option value="2">Autor 2</option>
-                            <option value="3">Autor 3</option>
-                        </select>
-                    </div>
-                    <div className="col">
-                        <select className="form-select form-select-sm" aria-label="Seleção de Ano">
-                            <option defaultValue>Selecione o Ano</option>
-                            <option value="1">Ano 1</option>
-                            <option value="2">Ano 2</option>
-                            <option value="3">Ano 3</option>
-                        </select>
-                    </div>
-                    <div className="col">
-                        <select className="form-select form-select-sm" aria-label="Seleção de Ano">
-                            <option defaultValue>Selecione o Ano</option>
-                            <option value="1">Ano 1</option>
-                            <option value="2">Ano 2</option>
-                            <option value="3">Ano 3</option>
+                        <select 
+                            className="form-select form-select-sm" 
+                            onChange={(e) => setFiltroAutor(e.target.value)}
+                        >
+                            <option value="">Selecione o Autor</option>
+                            {autores.map((autor, index) => (
+                                <option key={index} value={autor}>{autor}</option>
+                            ))}
                         </select>
                     </div>
                 </nav>
@@ -109,48 +68,34 @@ function Acervo() {
 
             <section className={styles.section_cards}>
                 <div className={styles.cardContainer}>
-                    {livros.map((livro, index) => (
-                        <a href="#" key={index} className={styles.cardLink}>
-                            <div className={styles.cardCustom}>
-                                <img src={livro.imagem} alt={livro.titulo} className={styles.cardImage} />
-                                <div className="card-body">
-                                    <div className={styles.tituloLivro}>
-                                        <h3>{livro.titulo}</h3>
+                    {livros
+                        .filter((livro) => 
+                            (!filtroCategoria || livro.category === filtroCategoria) &&
+                            (!filtroAutor || livro.author === filtroAutor)
+                        )
+                        .map((livro) => (
+                            <a href={`/Aluguel/${livro.id}`} key={livro.id} className={styles.cardLink}>
+                                <div className={styles.cardCustom}>
+                                    <img 
+                                        src={`${process.env.PUBLIC_URL}/images/${livro.coverImage}`} 
+                                        alt={livro.title} 
+                                        className={styles.cardImage} 
+                                    />
+                                    <div className="card-body">
+                                        <div className={styles.tituloLivro}>
+                                            <h3>{livro.title}</h3>
+                                        </div>
+                                        <div className={styles.autor}>
+                                            <h4>{livro.author}</h4>
+                                        </div>
                                     </div>
-                                    <div className={styles.autor}>
-                                        <h4>{livro.autor}</h4>
-                                    </div>
-                                </div>
                                     <button className={styles.customButton}>Alugar</button>
                                 </div>
-                            
-                        </a>
-                    ))}
+                            </a>
+                        ))
+                    }
                 </div>
             </section>
-
-            {/* <section className={styles.section_cards}>
-                <div className={styles.cardContainer}>
-                    {livros.map((livro, index) => (
-                        <a href="#" key={index} className={styles.cardLink}>
-                            <div className={styles.cardCustom}>
-                                <img src={livro.imagem} alt={livro.titulo} className={styles.cardImage} />
-                                <div className="card-body">
-                                    <div className={styles.tituloLivro}>
-                                        <h3>{livro.titulo}</h3>
-                                    </div>
-                                    <div className={styles.autor}>
-                                        <h4>{livro.autor}</h4>
-                                    </div>
-                                </div>
-                                    <button className={styles.customButton}>Alugar</button>
-                                </div>
-                            
-                        </a>
-                    ))}
-                </div>
-            </section> */}
-            
         </main>
     );
 }

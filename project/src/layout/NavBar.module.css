@@ -53,7 +53,7 @@
 }
 
 .navbarLink:hover {
-  background-color: #61A4C0;
+  background: linear-gradient(135deg, #30b3ec, #30aee5);
   color: #000;
   transform: scale(1.05);
   text-shadow: 0 0 10px #61A4C0, 0 0 20px #61A4C0;
@@ -74,8 +74,8 @@
   width: 100%;
 }
 .navbarLinkB{
-  color: #ffffff;
-  background: linear-gradient(90deg, #0d807d, #00fd81 100%);
+  color: #1a1a1a;
+  background: linear-gradient(135deg, #7fc3e0, #61A4C0);
   border: none;
   padding: 0.5rem 1rem;
   font-size: 1rem;
@@ -88,7 +88,7 @@
 }
 
 .navbarLinkB:hover{
-  background: linear-gradient(90deg, #07c7c1, #00fd2a 100%);
+  background: linear-gradient(135deg, #30b3ec, #30aee5);
   transform: scale(1.05);
 }
 .navbarLinkB:focus,

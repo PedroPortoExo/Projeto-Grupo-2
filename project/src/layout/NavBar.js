@@ -54,7 +54,9 @@ export default function Navbar() {
                 Seus Livros
               </Link>
             </li>
-            <li className={styles.navbarLink}>Olá, {user.name}</li>
+            <li className={styles.navbarLink}>
+          <span className={styles.navbarTitle}>Olá, {user.name}</span>
+        </li>
             <li>
               <button onClick={sair} className={styles.navbarLinkB}>
                 Sair
