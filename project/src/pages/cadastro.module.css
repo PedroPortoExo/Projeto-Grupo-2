@@ -1,65 +1,68 @@
 .modalBackground {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: rgba(0, 0, 0, 0.8);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    z-index: 1000; 
-  }
-  
-  .modalContainer {
-    background-color: #1a1a1a;
-    padding: 30px;
-    border-radius: 8px;
-    max-width: 400px;
-    width: 90%;
-    position: relative;
-  }
-  
-  .closeButton {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    background: none;
-    border: none;
-    font-size: 24px;
-    color: #ffffff;
-    cursor: pointer;
-  }
-  
-  .title {
-    color: #00b3ff;
-    text-align: center;
-    margin-bottom: 20px;
-  }
-  
-  .label {
-    color: #e0e0e0;
-    margin-top: 10px;
-    display: block;
-  }
-  
-  .input {
-    width: 100%;
-    padding: 10px;
-    border-radius: 4px;
-    background-color: #333333;
-    color: #ffffff;
-    border: 1px solid #00b3ff;
-    margin-top: 5px;
-  }
-  
-  .button {
-    background-color: #00b3ff;
-    color: #1a1a1a;
-    margin-top: 20px;
-    padding: 10px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    width: 100%;
-  }  
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #128f8b3d;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.modalContainer {
+  background-color: #128F8B;
+  padding: 30px;
+  border-radius: 8px;
+  max-width: 400px;
+  width: 90%;
+  position: relative;
+}
+
+.closeButton {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  font-size: 24px;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.title {
+  color: white;
+  display: flex;
+  text-align: center;
+  margin-bottom: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+.label {
+  color: #e0e0e0;
+  margin-top: 10px;
+  display: block;
+}
+
+.input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 4px;
+  background-color: #333333;
+  color: #ffffff;
+  border: 1px solid #00b3ff;
+  margin-top: 5px;
+}
+
+.button {
+  background-color: #00b3ff;
+  color: #1a1a1a;
+  margin-top: 20px;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+}

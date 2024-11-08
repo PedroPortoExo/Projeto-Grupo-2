@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import styles from './cadastro.module.css';
+import {UserRegister} from '../components/Icons'
 
 export default function Cadastro({ onClose }) {
   const [name, setName] = useState('');
@@ -26,7 +27,7 @@ export default function Cadastro({ onClose }) {
     <div className={styles.modalBackground}>
       <div className={styles.modalContainer}>
         <button className={styles.closeButton} onClick={onClose}>×</button>
-        <h2 className={styles.title}>Cadastro</h2>
+        <h2 className={styles.title}><UserRegister style={{ marginRight: '10px' }} />Cadastro</h2>
         <form onSubmit={handleSignup}>
           <label className={styles.label}>Nome</label>
           <input
