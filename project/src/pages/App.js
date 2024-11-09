@@ -1,6 +1,4 @@
 import "./App.css";
-
-
 import { BrowserRouter as Router, Routes, Route} from "react-router-dom";
 import { AuthProvider } from './components/AuthContext';
 import NavBar from "./layout/NavBar";
@@ -10,8 +8,8 @@ import Login from "./pages/Login";
 import Home from "./pages/Home";
 import Acervo from "./pages/Acervo";
 import Aluguel from "./pages/Aluguel";
-import ListLivros from "./pages/Listlivros";
-import SobreNos from "./pages/SobreNos";
+import ListLivros from "./pages/Listlivros"
+import sobreNos from "./pages/sobreNos"
 
 function App() {
   return (

@@ -33,7 +33,7 @@ export default function Navbar() {
           <span className={styles.navbarTitle}>BookVirtua</span>
         </li>
         <li>
-          <Link to="/Sobre-nos" className={styles.navbarLink}>
+          <Link to="/SobreNos" className={styles.navbarLink}>
             Sobre nós
           </Link>
         </li>

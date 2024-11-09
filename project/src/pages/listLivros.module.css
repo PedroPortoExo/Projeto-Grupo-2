@@ -1,0 +1,83 @@
+/* Estilo geral da página */
+.mainContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Cards - Container Flex */
+.cardContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-between;
+}
+
+.section_cards {
+  margin-top: 5em;
+  margin-bottom: 6em;
+  width: 80%;
+}
+
+/* Estilos personalizados do card */
+.cardCustom {
+  display: flex; /* Usar flexbox para o card */
+  flex-direction: column; /* Organiza os elementos do card de cima para baixo */
+  justify-content: center; /* Garante que o conteúdo do card seja bem distribuído */
+  max-width: 250px;  /* Definindo o tamanho máximo dos cards */
+  border-radius: 8px; /* Arredondando os cantos */
+  width: 90%;
+  height: 90%;
+  padding: 20px;
+  max-width: 250px;
+  transition: transform .5s ease-in-out;
+  border: 2px solid #e5e3e3f2
+}
+
+.cardCustom:hover {
+  transform: scale(1.05);
+  /* Efeito ao passar o mouse */
+  border-top: 3px solid #128f8ba8;
+}
+
+/* Imagem do card */
+.cardImage {
+  width: 100%;
+  height: auto;
+}
+
+/* Título do livro */
+.tituloLivro {
+  font-size: 0.9rem;
+  text-align: center;
+}
+
+/* Autor do livro */
+.autor {
+  font-size: 0.8rem;
+  color: #605e5ea1;
+  text-align: center;
+  /* border: 2px solid; */
+}
+
+/* Link dos cards */
+.cardLink {
+  text-decoration: none;
+  /* Remove underline dos links */
+  color: inherit;
+  /* Faz o texto ficar com a cor original */
+}
+
+.customButton {
+  border-radius: 3%;
+  padding: 5%;
+  border: 2px solid #ff9c00;
+  color: #ff9c00;
+  cursor: pointer;
+}
+
+.userWelcome {
+  color: #504c4c;
+  font-size: 20pt;
+}
