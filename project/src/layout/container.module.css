@@ -3,27 +3,32 @@
 .container textarea {
     font-family: 'Orbitron', sans-serif;
     width: 95%;
-    padding: 10px;
+    padding: 12px;
     margin: 10px 0 20px 0;
-    border: none;
     border-radius: 10px;
-    background: linear-gradient(135deg, #20b0be, #26b5ae);
-    color: #f0f8ff;
-    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
+    border: 3px solid transparent;
+    background: linear-gradient(white, white) padding-box, 
+                linear-gradient(135deg, #20b0be, #26b5ae) border-box;
+    background-clip: padding-box, border-box;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-    transition: background 0.3s ease, box-shadow 0.3s ease, text-shadow 0.3s ease;
+    color: #1a1a1a;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
+    transition: background 0.3s ease, box-shadow 0.3s ease, color 0.3s ease;
 }
 
 .container input:focus,
 .container select:focus,
 .container textarea:focus {
+    background: linear-gradient(white, white) padding-box, 
+                linear-gradient(135deg, #20ebff, #18e8de) border-box;
+    color: #1a1a1a;
     outline: none;
-    background: linear-gradient(135deg, #20ebff, #18e8de);
-    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5);
-    box-shadow: 0 0px 30px #61A4C0;
+    box-shadow: 0 0 10px rgba(32, 235, 255, 0.6), 
+                0 0 20px rgba(32, 235, 255, 0.4), 
+                0 0 32px rgba(24, 232, 222, 0.3);
 }
 
-/* Estilo apenas para input[type="submit"] */
+
 .container button,
 .container input[type="submit"] {
     font-family: 'Orbitron', sans-serif;
