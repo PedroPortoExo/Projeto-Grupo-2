@@ -89,7 +89,7 @@ function Acervo() {
                                             <h4>{livro.author}</h4>
                                         </div>
                                     </div>
-                                    <button className={styles.customButton}>Alugar</button>
+                                    <button className={styles.buttonCont}>Alugar</button>
                                 </div>
                             </a>
                         ))

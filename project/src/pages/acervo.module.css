@@ -94,8 +94,8 @@
   .cardContainer {
     display: flex;
     flex-wrap: wrap;
-    gap: 12px;
-    justify-content: space-between;
+    gap: 0.8vw;
+    justify-content: flex-start;
   }
   
   .section_cards{
@@ -126,6 +126,7 @@
   .cardCustom:hover {
     transform: scale(1.05); /* Efeito ao passar o mouse */
     border-top: 3px solid #128f8ba8;
+    border-bottom: 3px solid #128f8ba8;
   }
   
   /* Imagem do card */

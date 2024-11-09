@@ -10,35 +10,39 @@
 .cardContainer {
   display: flex;
   flex-wrap: wrap;
-  gap: 20px;
-  justify-content: space-between;
+  gap: 0.8vw;
+  justify-content: flex-start;
 }
 
 .section_cards {
-  margin-top: 5em;
+  margin-top: 2em;
   margin-bottom: 6em;
   width: 80%;
 }
 
 /* Estilos personalizados do card */
 .cardCustom {
+    
   display: flex; /* Usar flexbox para o card */
   flex-direction: column; /* Organiza os elementos do card de cima para baixo */
   justify-content: center; /* Garante que o conteúdo do card seja bem distribuído */
-  max-width: 250px;  /* Definindo o tamanho máximo dos cards */
+  max-width: 250px; /* Definindo o tamanho máximo dos cards */
   border-radius: 8px; /* Arredondando os cantos */
+  
   width: 90%;
   height: 90%;
   padding: 20px;
-  max-width: 250px;
+  max-width: 250px;  
   transition: transform .5s ease-in-out;
-  border: 2px solid #e5e3e3f2
+  /* margin-bottom: 2em; */
+  border: 2px solid #e5e3e3f2;
+  background-color: #22c0ed40;
 }
 
 .cardCustom:hover {
   transform: scale(1.05);
-  /* Efeito ao passar o mouse */
   border-top: 3px solid #128f8ba8;
+  border-bottom: 3px solid #128f8ba8;
 }
 
 /* Imagem do card */
@@ -69,15 +73,49 @@
   /* Faz o texto ficar com a cor original */
 }
 
-.customButton {
-  border-radius: 3%;
-  padding: 5%;
-  border: 2px solid #ff9c00;
-  color: #ff9c00;
-  cursor: pointer;
-}
-
 .userWelcome {
   color: #504c4c;
   font-size: 20pt;
+}
+.customButton {
+  background: #26b5ae !important;
+  color: #fff !important;
+  border: none !important;
+  border-radius: 5px !important;
+  padding: 8px 12px !important;
+  margin: 5px !important;
+  cursor: pointer !important;
+  transition: background-color 0.3s ease !important;
+}
+
+.customButton:hover {
+  background: #20b0be !important;
+}
+
+.customButtonReturn {
+  background: #f44336 !important;
+  color: #fff !important;
+}
+
+.customButtonReturn:hover {
+  background: #d32f2f !important;
+}
+
+
+.tempAluguel p {
+  font-size: 0.9rem;
+  color: #333333;
+  background: #f9f9f9;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-family: 'Orbitron', sans-serif;
+  text-align: center;
+  margin-top: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.tempAluguel p:before {
+  content: "📅 "; /* Adiciona um ícone de calendário */
+  font-size: 1.1rem;
+  color: #20b0be;
 }

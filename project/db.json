@@ -22,7 +22,7 @@
       "edition": "1ª edição",
       "genre": "Cosmologia, Ciência Popular",
       "category": "Ciência",
-      "copiesAvailable": 1,
+      "copiesAvailable": 0,
       "totalCopies": 2,
       "coverImage": "img3.jpg",
       "description": "Explora temas como o Big Bang, buracos negros, relatividade geral e mecânica quântica de forma acessível para leigos.",
@@ -36,7 +36,7 @@
       "edition": "1ª edição",
       "genre": "Romance",
       "category": "Ficção",
-      "copiesAvailable": 2,
+      "copiesAvailable": 1,
       "totalCopies": 3,
       "coverImage": "img4.jpg",
       "description": "Um romance poderoso sobre racismo e injustiça no sul dos Estados Unidos.",
@@ -50,8 +50,8 @@
       "edition": "1ª edição",
       "genre": "Ciência",
       "category": "Ciência",
-      "copiesAvailable": 0,
-      "totalCopies": 1,
+      "copiesAvailable": 1,
+      "totalCopies": 2,
       "coverImage": "img5.jpg",
       "description": "A obra seminal que introduziu a teoria da evolução das espécies por seleção natural.",
       "publicationYear": 1859
@@ -117,6 +117,16 @@
           "bookId": "1",
           "title": "1984",
           "dueDate": "2024-12-08"
+        },
+        {
+          "bookId": "3",
+          "title": "To Kill a Mockingbird",
+          "dueDate": "2024-12-09"
+        },
+        {
+          "bookId": "2",
+          "title": "A Brief History of Time",
+          "dueDate": "2024-12-09"
         }
       ]
     }
