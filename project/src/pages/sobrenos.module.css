@@ -1,0 +1,28 @@
+.mainContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;    
+    text-align: center;     
+  }
+  
+  .mainContent h1 {
+    font-size: 3rem;         
+    font-weight: bold;      
+    color: #2a3d56;         
+    margin-bottom: 20px;     
+  }
+  
+  .mainContent p {
+    font-size: 1.25rem;     
+    line-height: 1.6;        
+    margin: 10px 0;         
+    max-width: 800px;        
+    color: #4a4a4a;        
+  }
+  
+  .mainContent .creators {
+    color: #3e7dbd;
+    font-size: 1.1rem;
+    margin-top: 30px;
+  }

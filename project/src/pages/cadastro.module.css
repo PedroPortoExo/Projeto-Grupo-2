@@ -21,14 +21,21 @@
 }
 
 .closeButton {
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  background: none;
-  border: none;
-  font-size: 24px;
-  color: #ffffff;
-  cursor: pointer;
+  position: absolute !important;
+  top: 10px !important;
+  right: 10px !important;
+  background: none !important;      
+  border: none !important;          
+  font-size: 24px !important;       
+  color: #ffffff !important;        
+  cursor: pointer !important;      
+  padding: 2px !important;            
+  outline: none !important;         
+  text-align: center;               
+}
+
+.closeButton:hover {
+  color: #ff0000 !important;                   
 }
 
 .title {

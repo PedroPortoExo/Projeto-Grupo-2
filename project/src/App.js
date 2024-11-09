@@ -10,6 +10,8 @@ import Login from "./pages/Login";
 import Home from "./pages/Home";
 import Acervo from "./pages/Acervo";
 import Aluguel from "./pages/Aluguel";
+import ListLivros from "./pages/Listlivros";
+import SobreNos from "./pages/SobreNos";
 
 function App() {
   return (
@@ -27,6 +29,8 @@ function App() {
                 <Route path="/Home" element={<Home />} />
                 <Route path="/Acervo" element={<Acervo />} />
                 <Route path="/Aluguel/:id" element={<Aluguel />} />
+                <Route path="/ListLivros" element={<ListLivros />} />
+                <Route path="/SobreNos" element={<SobreNos />} />
                 {/* <Route path="*" element={<NotFound />} /> */}
               </Routes>
             </Container>

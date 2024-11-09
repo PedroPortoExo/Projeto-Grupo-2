@@ -45,7 +45,7 @@ export default function Aluguel() {
 
         const updatedBook = {
           ...book,
-          copiesAvailable: book.copiesAvailable - 1,
+          copiesAvailable: book.copiesAvailable - 1, // Atualiza o número de cópias disponíveis
         };
 
         await fetch(`http://localhost:5000/books/${id}`, {
@@ -56,7 +56,7 @@ export default function Aluguel() {
           body: JSON.stringify(updatedBook),
         });
 
-        setBook(updatedBook);
+        setBook(updatedBook); // Atualiza o estado do livro com a nova quantidade de cópias
         alert(`Livro "${book.title}" alugado com sucesso!`);
       } else {
         alert('Este livro não está disponível para aluguel no momento.');
@@ -68,7 +68,8 @@ export default function Aluguel() {
 
   const imagePath = process.env.PUBLIC_URL + "/images/" + book.coverImage;
   const isAvailable = book.copiesAvailable > 0;
-  
+  const userHasRented = user && user.borrowedBooks.some(b => b.bookId === book.id);
+
   return (
     <div className={styles.container}>
       <div className={styles['book-cover']}>
@@ -87,12 +88,16 @@ export default function Aluguel() {
             {isAvailable ? 'Disponível' : 'Indisponível'}
           </span>
         </p>
-        <button 
-          onClick={handleRent} 
-          className={styles['rent-button']} 
-          disabled={!isAvailable}
+        <button
+          onClick={handleRent}
+          className={styles['rent-button']}
+          disabled={userHasRented || !isAvailable}
         >
-          {isAvailable ? 'Alugar' : 'Indisponível'}
+          {userHasRented
+            ? 'Já alugado'
+            : isAvailable
+            ? 'Alugar'
+            : 'Indisponível'}
         </button>
         <div className={styles.description}>
           <p>Descrição:</p>

@@ -55,8 +55,16 @@ export const AuthProvider = ({ children }) => {
     }
   };
 
+  const returnBook = (bookId) => {
+    setUser((prevUser) => ({
+        ...prevUser,
+        borrowedBooks: prevUser.borrowedBooks.filter(book => book.bookId !== bookId),
+    }));
+};
+
+
   return (
-    <AuthContext.Provider value={{ user, login, logout, updateUser }}>
+    <AuthContext.Provider value={{ user, login, logout, updateUser, returnBook}}>
       {children}
     </AuthContext.Provider>
   );
