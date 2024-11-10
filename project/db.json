@@ -8,7 +8,7 @@
       "edition": "1ª edição",
       "genre": "Ficção distópica",
       "category": "Ficção",
-      "copiesAvailable": 4,
+      "copiesAvailable": 1,
       "totalCopies": 5,
       "coverImage": "img2.jpg",
       "description": "Um clássico da literatura distópica que explora os perigos do totalitarismo e a opressão governamental.",
@@ -50,7 +50,7 @@
       "edition": "1ª edição",
       "genre": "Ciência",
       "category": "Ciência",
-      "copiesAvailable": 1,
+      "copiesAvailable": 0,
       "totalCopies": 2,
       "coverImage": "img5.jpg",
       "description": "A obra seminal que introduziu a teoria da evolução das espécies por seleção natural.",
@@ -114,11 +114,6 @@
       "password": "123456",
       "borrowedBooks": [
         {
-          "bookId": "1",
-          "title": "1984",
-          "dueDate": "2024-12-08"
-        },
-        {
           "bookId": "3",
           "title": "To Kill a Mockingbird",
           "dueDate": "2024-12-09"
@@ -127,6 +122,37 @@
           "bookId": "2",
           "title": "A Brief History of Time",
           "dueDate": "2024-12-09"
+        },
+        {
+          "bookId": "1",
+          "title": "1984",
+          "dueDate": "2024-12-10"
+        }
+      ]
+    },
+    {
+      "id": "1731281731300",
+      "name": "pedro porto",
+      "email": "pedroporto@gmail.com",
+      "password": "1234",
+      "borrowedBooks": [
+        {
+          "bookId": "1",
+          "title": "1984",
+          "dueDate": "2024-12-10"
+        }
+      ]
+    },
+    {
+      "id": "1731282394599",
+      "name": "Ronan Brabo",
+      "email": "RonanBrabo@test.com",
+      "password": "SouBrabo",
+      "borrowedBooks": [
+        {
+          "bookId": "4",
+          "title": "The Origin of Species",
+          "dueDate": "2024-12-10"
         }
       ]
     }

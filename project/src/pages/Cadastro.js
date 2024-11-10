@@ -13,7 +13,7 @@ export default function Cadastro({ onClose }) {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({
-        id: Date.now(),
+        id: Date.now().toString(),
         name,
         email,
         password,
