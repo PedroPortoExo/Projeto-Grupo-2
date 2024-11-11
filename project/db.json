@@ -36,7 +36,7 @@
       "edition": "1ª edição",
       "genre": "Romance",
       "category": "Ficção",
-      "copiesAvailable": 1,
+      "copiesAvailable": 7,
       "totalCopies": 3,
       "coverImage": "img4.jpg",
       "description": "Um romance poderoso sobre racismo e injustiça no sul dos Estados Unidos.",
@@ -53,6 +53,62 @@
       "copiesAvailable": 0,
       "totalCopies": 2,
       "coverImage": "img5.jpg",
+      "description": "A obra seminal que introduziu a teoria da evolução das espécies por seleção natural.",
+      "publicationYear": 1859
+    },
+    {
+      "id": "5",
+      "title": "The Origin of Species",
+      "author": "Charles Darwin",
+      "publisher": "John Murray",
+      "edition": "1ª edição",
+      "genre": "Ciência",
+      "category": "Ciência",
+      "copiesAvailable": 0,
+      "totalCopies": 2,
+      "coverImage": "img1.jpg",
+      "description": "A obra seminal que introduziu a teoria da evolução das espécies por seleção natural.",
+      "publicationYear": 1859
+    },
+    {
+      "id": "6",
+      "title": "The Origin of Species",
+      "author": "Charles Darwin",
+      "publisher": "John Murray",
+      "edition": "1ª edição",
+      "genre": "Ciência",
+      "category": "Ciência",
+      "copiesAvailable": 0,
+      "totalCopies": 2,
+      "coverImage": "img6.jpg",
+      "description": "A obra seminal que introduziu a teoria da evolução das espécies por seleção natural.",
+      "publicationYear": 1859
+    },
+    {
+      "id": "7",
+      "title": "The Origin of Species",
+      "author": "Charles Darwin",
+      "publisher": "John Murray",
+      "edition": "1ª edição",
+      "genre": "Ciência",
+      "category": "Ciência",
+      "copiesAvailable": 0,
+      "totalCopies": 2,
+      "coverImage": "img7.jpg",
+      "description": "A obra seminal que introduziu a teoria da evolução das espécies por seleção natural.",
+      "publicationYear": 1859
+    },
+    {
+      "id": "8",
+      "title": "The Origin of Species",
+      "author": "Charles Darwin",
+      "publisher": "John Murray",
+      "edition": "1ª edição",
+      "genre": "Ciência",
+      "category": "Ciência",
+      "copiesAvailable": 0,
+      "totalCopies": 2,
+      "coverImage": "img8.jpg",
       "description": "A obra seminal que introduziu a teoria da evolução das espécies por seleção natural.",
       "publicationYear": 1859
     }
@@ -155,6 +211,27 @@
           "dueDate": "2024-12-10"
         }
       ]
+    },
+    {
+      "id": "1731349356902",
+      "name": "andre",
+      "email": "andre@gmail.com",
+      "password": "12345678",
+      "borrowedBooks": []
+    }
+  ],
+  "carrossel": [
+    {
+      "id": "1",
+      "capaUrl": "banner1.svg"
+    },
+    {
+      "id": "2",
+      "capaUrl": "banner2.svg"
+    },
+    {
+      "id": "3",
+      "capaUrl": "banner3.svg"
     }
   ]
 }
