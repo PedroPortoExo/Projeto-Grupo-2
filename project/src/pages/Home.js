@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import styles from './Home.module.css';  
+import styles from './home.module.css';  
 import Carrossel from '../components/Carrossel';
 
 

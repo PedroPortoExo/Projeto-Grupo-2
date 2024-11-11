@@ -50,7 +50,7 @@
       "edition": "1ª edição",
       "genre": "Ciência",
       "category": "Ciência",
-      "copiesAvailable": 0,
+      "copiesAvailable": 1,
       "totalCopies": 2,
       "coverImage": "img5.jpg",
       "description": "A obra seminal que introduziu a teoria da evolução das espécies por seleção natural.",
@@ -64,8 +64,8 @@
       "edition": "1ª edição",
       "genre": "Ciência",
       "category": "Ciência",
-      "copiesAvailable": 0,
-      "totalCopies": 2,
+      "copiesAvailable": 6,
+      "totalCopies": 7,
       "coverImage": "img1.jpg",
       "description": "A obra seminal que introduziu a teoria da evolução das espécies por seleção natural.",
       "publicationYear": 1859
@@ -78,8 +78,8 @@
       "edition": "1ª edição",
       "genre": "Ciência",
       "category": "Ciência",
-      "copiesAvailable": 0,
-      "totalCopies": 2,
+      "copiesAvailable": 8,
+      "totalCopies": 8,
       "coverImage": "img6.jpg",
       "description": "A obra seminal que introduziu a teoria da evolução das espécies por seleção natural.",
       "publicationYear": 1859
@@ -92,8 +92,8 @@
       "edition": "1ª edição",
       "genre": "Ciência",
       "category": "Ciência",
-      "copiesAvailable": 0,
-      "totalCopies": 2,
+      "copiesAvailable": 6,
+      "totalCopies": 6,
       "coverImage": "img7.jpg",
       "description": "A obra seminal que introduziu a teoria da evolução das espécies por seleção natural.",
       "publicationYear": 1859
@@ -106,7 +106,7 @@
       "edition": "1ª edição",
       "genre": "Ciência",
       "category": "Ciência",
-      "copiesAvailable": 0,
+      "copiesAvailable": 2,
       "totalCopies": 2,
       "coverImage": "img8.jpg",
       "description": "A obra seminal que introduziu a teoria da evolução das espécies por seleção natural.",
@@ -206,9 +206,9 @@
       "password": "SouBrabo",
       "borrowedBooks": [
         {
-          "bookId": "4",
+          "bookId": "5",
           "title": "The Origin of Species",
-          "dueDate": "2024-12-10"
+          "dueDate": "2024-12-11"
         }
       ]
     },

@@ -17,11 +17,12 @@ export default function Aluguel() {
     fetchBook();
   }, [id]);
 
-  const handleRent = async () => {
+  const handleRent = async (e) => {
+    e.preventDefault();
     if (user && book) {
       const alreadyRented = user.borrowedBooks.some(b => b.bookId === book.id);
       if (alreadyRented) {
-        alert(`Você já alugou o livro "${book.title}".`);
+        
         return;
       }
 
@@ -57,9 +58,6 @@ export default function Aluguel() {
         });
 
         setBook(updatedBook); // Atualiza o estado do livro com a nova quantidade de cópias
-        alert(`Livro "${book.title}" alugado com sucesso!`);
-      } else {
-        alert('Este livro não está disponível para aluguel no momento.');
       }
     }
   };
