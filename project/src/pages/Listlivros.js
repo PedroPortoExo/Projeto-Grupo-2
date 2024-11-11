@@ -1,9 +1,11 @@
 import { useState, useEffect, useContext } from 'react';
 import { AuthContext } from '../components/AuthContext';
+import BookModal from '../components/BookModal'; // Importa o modal de leitura
 import styles from './listLivros.module.css';
 
 function ListLivros() {
     const [livros, setLivros] = useState([]);
+    const [selectedBook, setSelectedBook] = useState(null); // Estado para o livro selecionado para leitura
     const { user, updateUser } = useContext(AuthContext);
 
     useEffect(() => {
@@ -47,6 +49,14 @@ function ListLivros() {
         );
     };
 
+    const handleRead = (livro) => {
+        setSelectedBook(livro); // Define o livro selecionado para leitura
+    };
+
+    const closeModal = () => {
+        setSelectedBook(null); // Fecha o modal
+    };
+
     return (
         <main className={styles.mainContent}>
             <p className={styles.userWelcome}>
@@ -55,7 +65,7 @@ function ListLivros() {
             <section className={styles.section_cards}>
                 <div className={styles.cardContainer}>
                     {livrosEmprestados.map(livro => (
-                        <a href={""} key={livro.id} className={styles.cardLink}>
+                        <div key={livro.id} className={styles.cardLink}>
                             <div className={styles.cardCustom}>
                                 <img
                                     src={`${process.env.PUBLIC_URL}/images/${livro.coverImage}`}
@@ -70,16 +80,19 @@ function ListLivros() {
                                         <h4>{livro.author}</h4>
                                     </div>
                                     <div className={styles.tempAluguel}>
-                                    <p>Tempo de aluguel: <br></br> {user.borrowedBooks.find(borrowed => borrowed.bookId === livro.id)?.dueDate || 'N/A'}</p>
+                                        <p>Tempo de aluguel: <br /> {user.borrowedBooks.find(borrowed => borrowed.bookId === livro.id)?.dueDate || 'N/A'}</p>
                                     </div>
                                 </div>
-                                <button id="customButton" className={styles.customButton}>Ler</button>
-                                <button id="customButtonReturn" onClick={() => handleReturn(livro.id)} className={styles.customButtonReturn}>Devolver</button>
+                                <button onClick={() => handleRead(livro)} className={styles.customButton}>Ler</button>
+                                <button onClick={() => handleReturn(livro.id)} className={styles.customButtonReturn}>Devolver</button>
                             </div>
-                        </a>
+                        </div>
                     ))}
                 </div>
             </section>
+            {selectedBook && (
+                <BookModal book={selectedBook} closeModal={closeModal} />
+            )}
         </main>
     );
 }

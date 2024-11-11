@@ -1,9 +1,21 @@
 /* Estilo geral da página */
-.mainContent {
+.main_content {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+  }
+
+  .section_titulo{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background-color:#D9D9D9;
+  }
+
+  .section_titulo h1{
+    text-transform: uppercase;
+    color:#1A536B;
   }
   
   .section_fitro{
@@ -91,11 +103,13 @@
   }
   
   /* Cards - Container Flex */
-  .cardContainer {
+  .card_container {
     display: flex;
     flex-wrap: wrap;
     gap: 0.8vw;
-    justify-content: flex-start;
+    justify-content: space-around;
+    /* border: 2px solid; */
+  
   }
   
   .section_cards{
@@ -103,6 +117,10 @@
     margin-bottom: 6em;
     /* border: 2px solid; */
     width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  
   }
   /* Estilos personalizados do card */
   .cardCustom {

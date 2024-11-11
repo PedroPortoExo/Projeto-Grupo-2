@@ -30,7 +30,13 @@ export default function Navbar() {
       </div>
       <ul className={`${styles.navbarMenu} ${isMenuOpen ? styles.active : ""}`}>
         <li className={styles.navbarLink}>
-          <span className={styles.navbarTitle}>BookVirtua</span>
+          <span className={styles.navbarTitle}>
+            <li>
+            <Link to="/Home" className={styles.navbarLink}>
+              BookVirtua
+            </Link>
+        </li>
+          </span>
         </li>
         <li>
           <Link to="/SobreNos" className={styles.navbarLink}>

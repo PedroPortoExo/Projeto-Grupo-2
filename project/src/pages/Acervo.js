@@ -26,7 +26,10 @@ function Acervo() {
     }, []);
 
     return (
-        <main className={styles.mainContent}>
+        <main className={styles.main_content}>
+            <section className={styles.section_titulo}>
+                <h1>Acervo</h1>
+            </section>
             <section className={styles.section_filtro}>
                 <nav className={styles.filtro}>
                     <div>
@@ -67,7 +70,7 @@ function Acervo() {
             </section>
 
             <section className={styles.section_cards}>
-                <div className={styles.cardContainer}>
+                <div className={styles.card_container}>
                     {livros
                         .filter((livro) => 
                             (!filtroCategoria || livro.category === filtroCategoria) &&
