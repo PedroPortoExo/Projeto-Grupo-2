@@ -21,7 +21,7 @@ export default function Footer() {
                         <div className={`${styles.column6} ${styles.marginBottom3} ${styles.columnMd2}`}>
                             <h5>Quem Somos</h5>
                             <ul className={styles.navUl}>
-                            <li className={styles.navItem}><Link to="#" className={styles.footerItens}>Sobre nós</Link></li>
+                            <li className={styles.navItem}><Link to="/SobreNos" className={styles.footerItens}>Sobre nós</Link></li>
                             <li className={styles.navItem}><Link to="#" className={styles.footerItens}>Editoras Parceiras</Link></li>
                             <li className={styles.navItem}><Link to="#" className={styles.footerItens}>Clientes</Link></li>
                             </ul>

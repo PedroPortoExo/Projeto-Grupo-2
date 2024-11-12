@@ -209,7 +209,22 @@
       "coverImage": "img15.jpg",
       "description": "Publicada em 1949, a obra-prima de George Orwell explora um futuro sombrio em que o governo controla todos os aspectos da vida. Winston Smith, o protagonista, trabalha para o governo, mas começa a questionar o totalitarismo do regime e sonha com liberdade. *1984* é um alerta sobre os perigos da opressão política e da manipulação da verdade.",
       "publicationYear": 1949
-    }
+    },
+    {
+      "id": "16",
+      "title": "O Diabo dos Números",
+      "author": "Hans Magnus Enzensberger",
+      "publisher": "Companhia das Letras",
+      "edition": "1ª edição",
+      "genre": "Infantil",
+      "category": "Infantil",
+      "copiesAvailable": 2,
+      "totalCopies": 3,
+      "coverImage": "img16.jpg",
+      "description": "Neste livro, Hans Magnus Enzensberger conta a história de Robert, um garoto que não gosta de matemática até encontrar o 'diabo dos números' em seus sonhos. Com explicações criativas e acessíveis, o livro explora conceitos matemáticos de forma divertida e instigante, despertando a curiosidade de leitores de todas as idades.",
+      "publicationYear": 1997
+  }
+  
   ],
   "categories": [
     {
