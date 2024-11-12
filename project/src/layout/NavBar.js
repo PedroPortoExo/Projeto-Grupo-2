@@ -14,7 +14,7 @@ export default function Navbar() {
   };
   const sair = () => {
     logout();
-    navigate("/");
+    navigate("/Login");
   };
   return (
     <nav className={styles.navbar}>
@@ -32,7 +32,7 @@ export default function Navbar() {
         <li className={styles.navbarLink}>
           <span className={styles.navbarTitle}>
             <li>
-            <Link to="/Home" className={styles.navbarLink}>
+            <Link to="/" className={styles.navbarLink}>
               BookVirtua
             </Link>
         </li>
@@ -46,7 +46,7 @@ export default function Navbar() {
         {user ? (
           <>
             <li>
-              <Link to="/Home" className={styles.navbarLink}>
+              <Link to="/" className={styles.navbarLink}>
                 Home
               </Link>
             </li>
@@ -71,7 +71,7 @@ export default function Navbar() {
           </>
         ) : (
           <li>
-            <Link to="/" className={styles.navbarLink}>
+            <Link to="/Login" className={styles.navbarLink}>
               Login
             </Link>
           </li>
