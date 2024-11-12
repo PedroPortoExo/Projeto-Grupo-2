@@ -1,8 +1,9 @@
-// Carrossel.jsx
+
+// Carrossel.js
 import React, { useState, useEffect } from 'react';
 import Slider from 'react-slick';
-import "slick-carousel/slick/slick.css"; 
-import "slick-carousel/slick/slick-theme.css";
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
 import styles from './carrossel.module.css';
 
 const Carrossel = () => {
@@ -23,31 +24,33 @@ const Carrossel = () => {
     fetchCarrosselLivros();
   }, []);
 
+  // Configurações do carrossel
   const settings = {
-    dots: true,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    autoplay: true,
-    autoplaySpeed: 3000,
+    dots: true,               
+    infinite: true,           
+    speed: 500,               
+    slidesToShow: 1,          
+    slidesToScroll: 1,        
+    autoplay: true,           
+    autoplaySpeed: 3000,      
+    arrows: true,             
   };
 
   return (
-    <div className={styles.div_carrossel}>
+    <div className={`my-slick-theme ${styles.carrosselContainer}`}>
       <Slider {...settings}>
         {livrosCarrossel.map((carrossel) => (
           <div key={carrossel.id}>
-            <img 
-              src={`${process.env.PUBLIC_URL}/images/${carrossel.capaUrl}`} 
-              alt={`Banner ${carrossel.id}`} // Usando um nome genérico para o alt
-              className={styles.carrosselImage} 
+            <img
+              src={`${process.env.PUBLIC_URL}/images/${carrossel.capaUrl}`}
+              alt={`Banner ${carrossel.id}`}
+              className={styles.carrosselImage}
             />
           </div>
         ))}
       </Slider>
     </div>
   );
-}
+};
 
 export default Carrossel;

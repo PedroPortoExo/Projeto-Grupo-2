@@ -1,6 +1,129 @@
-.div_carrossel{
+
+/* carrossel.module.css */
+
+/* Container principal do carrossel */
+.carrosselContainer {
     width: 80%;
+    margin: 0 auto;
     display: flex;
     flex-direction: column;
+    position: relative;
 }
 
+/* Estilo dos botões do carrossel */
+.carrosselContainer button {
+    padding: 0 !important;
+    line-height: 1.1 !important;
+    box-shadow: none !important;
+    border: none !important;
+    border-radius: 20px !important;
+    background: transparent !important;
+}
+
+.carrosselContainer button:hover {
+    background: transparent !important;
+    transform: translateY(-0.1px) !important;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.5) !important;
+}
+
+.carrosselContainer button:active {
+    transform: translateY(0) !important;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3) !important;
+}
+
+/* Imagem do carrossel */
+.carrosselContainer .carrosselImage {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Botões de navegação anterior/próximo */
+.my-slick-theme .slick-prev,
+.my-slick-theme .slick-next {
+    font-size: 0 !important;
+    position: absolute !important;
+    top: 50% !important;
+    transform: translate(0, -50%) !important;
+    background: rgba(0, 0, 0, 0.5) !important;
+    color: #ffffff !important;
+    border: none !important;
+    padding: 10px;
+    border-radius: 50% !important;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+}
+
+.carrosselContainer .slick-prev {
+    left: 10px;
+}
+
+.carrosselContainer .slick-next {
+    right: 10px;
+}
+
+.carrosselContainer .slick-prev:hover,
+.carrosselContainer .slick-next:hover {
+    background: rgba(0, 0, 0, 0.7) !important;
+}
+
+/* Icones dos botões de navegação */
+.carrosselContainer .slick-prev:before,
+.carrosselContainer .slick-next:before {
+    font-family: 'slick' !important;
+    font-size: 20px !important;
+    line-height: 1.1 !important;
+    opacity: 0.75 !important;
+    color: #ffffff !important;
+    -webkit-font-smoothing: antialiased !important;
+    -moz-osx-font-smoothing: grayscale !important;
+}
+
+/* Bolinhas de navegação */
+.carrosselContainer .slick-dots {
+    bottom: -30px;
+    list-style: none;
+    display: flex !important;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+}
+.slick-prev:hover:before, .slick-prev:focus:before, .slick-next:hover:before, .slick-next:focus:before {
+    opacity: 1 !important;
+}
+
+.slick-prev:before {
+    content: '←' !important;
+}
+
+.carrosselContainer .slick-dots li {
+    display: inline-block;
+    margin: 0 4px;
+}
+
+.carrosselContainer .slick-dots li button {
+    font-size: 0;
+    line-height: 0;
+    display: block;
+    width: 12px;
+    height: 12px;
+    padding: 5px;
+    cursor: pointer;
+    border-radius: 50%;
+    background: transparent;
+    border: none;
+    outline: none;
+}
+
+.my-slick-theme .slick-dots li button:before {
+    font-size: 12px !important;
+    color: #ffffff !important;
+    opacity: 0.5 !important;
+    content: '•';
+    transition: opacity 0.3s;
+}
+
+.my-slick-theme .slick-dots li.slick-active button:before {
+    color: #20b0be !important;
+    opacity: 1 !important;
+}

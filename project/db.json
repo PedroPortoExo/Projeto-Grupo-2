@@ -92,10 +92,8 @@
       "edition": "1ª edição",
       "genre": "Ciência",
       "category": "Ciência",
-      "copiesAvailable": 0,
+      "copiesAvailable": 1,
       "totalCopies": 2,
-      "coverImage": "img7.jpg",
-      "description": "Quantas vezes você reclamou de algo hoje? Já parou pra pensar como é difícil ser grato e como focamos muito mais a nossa atenção nos problemas e não nas soluções?",
       "publicationYear": 2021
     },
     {
@@ -207,9 +205,9 @@
       "password": "SouBrabo",
       "borrowedBooks": [
         {
-          "bookId": "4",
+          "bookId": "5",
           "title": "The Origin of Species",
-          "dueDate": "2024-12-10"
+          "dueDate": "2024-12-11"
         }
       ]
     },
