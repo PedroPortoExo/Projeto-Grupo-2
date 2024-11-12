@@ -182,3 +182,8 @@
     color: #ff9c00;
     cursor: pointer;
   }
+  .card_body{
+    height: 150px;
+    max-height: 150px;
+  }
+  

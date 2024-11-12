@@ -77,6 +77,9 @@
   color: #504c4c;
   font-size: 20pt;
 }
+.card_body{
+  height: 200px;
+}
 .customButton {
   background: #26b5ae !important;
   color: #fff !important;
