@@ -22,7 +22,7 @@
       "edition": "1ª edição",
       "genre": "Ciencias Sociais",
       "category": "Ciência",
-      "copiesAvailable": 5,
+      "copiesAvailable": 6,
       "totalCopies": 2,
       "coverImage": "img2.jpg",
       "description": "Jessé Souza não é um sociólogo que se esconde atrás de palavras difíceis. Seu trabalho, que ganha cada vez mais destaque.",
@@ -36,7 +36,7 @@
       "edition": "1ª edição",
       "genre": "Romance",
       "category": "Ficção",
-      "copiesAvailable": 7,
+      "copiesAvailable": 6,
       "totalCopies": 3,
       "coverImage": "img3.jpg",
       "description": "“Os princípios ensinados neste livro só funcionam quando são de coração. Não estou defendendo um conjunto de truques. Estou falando sobre um novo estilo de vida..",
@@ -94,6 +94,7 @@
       "category": "Ciência",
       "copiesAvailable": 1,
       "totalCopies": 2,
+      "coverImage": "img7.jpg",
       "publicationYear": 2021
     },
     {
@@ -107,10 +108,9 @@
       "copiesAvailable": 0,
       "totalCopies": 2,
       "coverImage": "img8.jpg",
-      "description":"Depois de uma grande decepção, Grace Harris encontra um amor arrebatador onde menos esperava. De Brittainy Cherry, autora de sucessos como Eleanor & Grey e a série Elementos, Vergonha volta às livrarias revisado e com uma nova e belíssima capa.",
+      "description": "Depois de uma grande decepção, Grace Harris encontra um amor arrebatador onde menos esperava. De Brittainy Cherry, autora de sucessos como Eleanor & Grey e a série Elementos, Vergonha volta às livrarias revisado e com uma nova e belíssima capa.",
       "publicationYear": 2022
     }
-
   ],
   "categories": [
     {
@@ -195,6 +195,11 @@
           "bookId": "1",
           "title": "1984",
           "dueDate": "2024-12-10"
+        },
+        {
+          "bookId": "3",
+          "title": "Como fazer amigos e influenciar pessoas",
+          "dueDate": "2024-12-12"
         }
       ]
     },

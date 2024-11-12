@@ -151,7 +151,13 @@
 /* Imagem do card */
 .cardImage {
   width: 100%;
-  height: auto;
+  height: 70%;
+  object-fit: cover;
+}
+
+.card_body{
+  height: 150px;
+  max-height: 150px;
 }
 
 /* Título do livro */

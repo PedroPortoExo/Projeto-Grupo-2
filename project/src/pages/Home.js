@@ -33,7 +33,7 @@ function Home() {
                                         alt={livro.title} 
                                         className={styles.cardImage} 
                                     />
-                                    <div className="card-body">
+                                    <div className={styles.card_body}>
                                         <div className={styles.tituloLivro}>
                                             <h3>{livro.title}</h3>
                                         </div>
