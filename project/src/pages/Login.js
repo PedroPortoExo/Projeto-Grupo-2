@@ -16,7 +16,7 @@ export default function LoginPage() {
     e.preventDefault();
     const success = await login(email, password);
     if (success) {
-      navigate('/Home');
+      navigate('/');
     } else {
       alert('Usuário ou senha incorretos');
     }

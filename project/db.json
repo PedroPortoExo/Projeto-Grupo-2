@@ -36,10 +36,10 @@
       "edition": "1ª edição",
       "genre": "Romance",
       "category": "Ficção",
-      "copiesAvailable": 6,
+      "copiesAvailable": 5,
       "totalCopies": 3,
       "coverImage": "img3.jpg",
-      "description": "“Os princípios ensinados neste livro só funcionam quando são de coração. Não estou defendendo um conjunto de truques. Estou falando sobre um novo estilo de vida..",
+      "description": "Um dos maiores clássicos de todos os tempos, Como fazer amigos e influenciar pessoas é considerado a Bíblia dos relacionamentos interpessoais.",
       "publicationYear": 2023
     },
     {
@@ -66,7 +66,7 @@
       "category": "Ciência",
       "copiesAvailable": 0,
       "totalCopies": 2,
-      "coverImage": "img1.jpg",
+      "coverImage": "img5.jpg",
       "description": "Uma história que vai surpreender até os leitores de suspense mais calejados.",
       "publicationYear": 2023
     },
@@ -95,6 +95,7 @@
       "copiesAvailable": 1,
       "totalCopies": 2,
       "coverImage": "img7.jpg",
+      "description": "Este livro lhe propõe o seguinte desafio: passe um dia (24 horas) sem reclamar. Para realizá-lo, você precisará registrar o horário em que iniciará o exercício. E não será preciso registrar quantas vezes você viola seu comando porque, a cada vez que você o fizer, deverá reiniciar a contagem do tempo.",
       "publicationYear": 2021
     },
     {
@@ -110,6 +111,118 @@
       "coverImage": "img8.jpg",
       "description": "Depois de uma grande decepção, Grace Harris encontra um amor arrebatador onde menos esperava. De Brittainy Cherry, autora de sucessos como Eleanor & Grey e a série Elementos, Vergonha volta às livrarias revisado e com uma nova e belíssima capa.",
       "publicationYear": 2022
+    },
+    {
+      "id": "9",
+      "title": "O Ceifador",
+      "author": "Neal Shusterman",
+      "publisher": "Seguinte",
+      "edition": "1ª edição",
+      "genre": "Ficção",
+      "category": "Ficção",
+      "copiesAvailable": 0,
+      "totalCopies": 7,
+      "coverImage": "img9.jpg",
+      "description": "Em um mundo onde a humanidade conquistou a morte, a população depende dos Ceifadores, pessoas responsáveis por controlar o crescimento populacional através da coleta de vidas. Citra e Rowan são escolhidos para serem aprendizes de Ceifadores, e precisam lidar com os dilemas morais e éticos desse papel sombrio. No entanto, apenas um deles será escolhido como Ceifador ao final de seu treinamento.",
+      "publicationYear": 2017
+    },
+    {
+      "id": "10",
+      "title": "O Guia Definitivo do Mochileiro das Galáxias",
+      "author": "Douglas Adams",
+      "publisher": "Arqueiro",
+      "edition": "Edição Definitiva",
+      "genre": "Ficção",
+      "category": "Ficção",
+      "copiesAvailable": 0,
+      "totalCopies": 3,
+      "coverImage": "img10.jpg",
+      "description": "O Guia Definitivo do Mochileiro das Galáxias reúne os cinco livros da famosa série escrita por Douglas Adams. Acompanha a saga de Arthur Dent, que após a destruição da Terra embarca em uma aventura cósmica cheia de personagens e situações absurdas, com muito humor e reflexões inusitadas sobre o universo.",
+      "publicationYear": 2014
+    },
+    {
+      "id": "11",
+      "title": "A Guerra dos Tronos",
+      "author": "George R.R. Martin",
+      "publisher": "Leya",
+      "edition": "1ª edição",
+      "genre": "Fantasia",
+      "category": "Fantasia",
+      "copiesAvailable": 2,
+      "totalCopies": 5,
+      "coverImage": "img11.jpg",
+      "description": "No primeiro volume da série *As Crônicas de Gelo e Fogo*, o leitor é levado ao continente de Westeros, onde diferentes famílias nobres lutam pelo controle do Trono de Ferro. Com personagens complexos e uma narrativa densa, George R.R. Martin constrói um mundo de traições, alianças e batalhas épicas, onde ninguém está seguro e o inverno se aproxima.",
+      "publicationYear": 2010
+    },
+    {
+      "id": "12",
+      "title": "É Assim que Acaba",
+      "author": "Colleen Hoover",
+      "publisher": "Galera Record",
+      "edition": "1ª edição",
+      "genre": "Romance",
+      "category": "Romance",
+      "copiesAvailable": 3,
+      "totalCopies": 4,
+      "coverImage": "img12.jpg",
+      "description": "Este romance emocionante de Colleen Hoover conta a história de Lily Bloom, que encontra o amor em Ryle Kincaid, um neurocirurgião encantador. No entanto, as coisas começam a mudar quando seu passado e questões não resolvidas surgem, levando-a a enfrentar dilemas dolorosos e decisões difíceis sobre amor, lealdade e seu próprio valor.",
+      "publicationYear": 2018
+    },
+    {
+      "id": "13",
+      "title": "Harry Potter e a Câmara Secreta",
+      "author": "J.K. Rowling",
+      "publisher": "Rocco",
+      "edition": "1ª edição",
+      "genre": "Fantasia",
+      "category": "Fantasia",
+      "copiesAvailable": 2,
+      "totalCopies": 5,
+      "coverImage": "img13.jpg",
+      "description": "No segundo ano de Harry Potter em Hogwarts, estranhos eventos começam a ocorrer na escola. Ele e seus amigos, Rony e Hermione, tentam desvendar o mistério da Câmara Secreta, uma lenda antiga que ameaça a segurança de todos em Hogwarts. Com novos personagens e revelações, o mundo mágico se torna ainda mais sombrio e perigoso.",
+      "publicationYear": 2000
+    },
+    {
+      "id": "14",
+      "title": "Você Não Merece Ser Feliz: Como Conseguir Mesmo Assim",
+      "author": "Daniel Martins de Barros",
+      "publisher": "Objetiva",
+      "edition": "1ª edição",
+      "genre": "Ciencias Sociais",
+      "category": "Ciência",
+      "copiesAvailable": 3,
+      "totalCopies": 5,
+      "coverImage": "img14.jpg",
+      "description": "Neste livro instigante, Daniel Martins de Barros desconstrói a ideia de que a felicidade é um direito absoluto e explora maneiras realistas de lidar com as frustrações e os desafios da vida. Com reflexões profundas e baseadas em psicologia e filosofia, o autor oferece insights para conquistar a satisfação e o bem-estar sem depender de uma busca idealizada pela felicidade.",
+      "publicationYear": 2020
+    },
+    {
+      "id": "15",
+      "title": "1984",
+      "author": "George Orwell",
+      "publisher": "Companhia das Letras",
+      "edition": "1ª edição",
+      "genre": "Ficção",
+      "category": "Ficção",
+      "copiesAvailable": 4,
+      "totalCopies": 6,
+      "coverImage": "img15.jpg",
+      "description": "Publicada em 1949, a obra-prima de George Orwell explora um futuro sombrio em que o governo controla todos os aspectos da vida. Winston Smith, o protagonista, trabalha para o governo, mas começa a questionar o totalitarismo do regime e sonha com liberdade. *1984* é um alerta sobre os perigos da opressão política e da manipulação da verdade.",
+      "publicationYear": 1949
+    },
+    {
+      "id": "16",
+      "title": "O Diabo dos Números",
+      "author": "Hans Magnus Enzensberger",
+      "publisher": "Companhia das Letras",
+      "edition": "1ª edição",
+      "genre": "Infantil",
+      "category": "Infantil",
+      "copiesAvailable": 2,
+      "totalCopies": 3,
+      "coverImage": "img16.jpg",
+      "description": "Neste livro, Hans Magnus Enzensberger conta a história de Robert, um garoto que não gosta de matemática até encontrar o 'diabo dos números' em seus sonhos. Com explicações criativas e acessíveis, o livro explora conceitos matemáticos de forma divertida e instigante, despertando a curiosidade de leitores de todas as idades.",
+      "publicationYear": 1997
     }
   ],
   "categories": [
@@ -213,6 +326,16 @@
           "bookId": "5",
           "title": "The Origin of Species",
           "dueDate": "2024-12-11"
+        },
+        {
+          "bookId": "10",
+          "title": "O Guia Definitivo do Mochileiro das Galáxias",
+          "dueDate": "2024-12-12"
+        },
+        {
+          "bookId": "3",
+          "title": "Como fazer amigos e influenciar pessoas",
+          "dueDate": "2024-12-12"
         }
       ]
     },

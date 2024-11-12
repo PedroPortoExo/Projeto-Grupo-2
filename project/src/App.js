@@ -25,8 +25,8 @@ function App() {
           <main>
             <Container>
               <Routes>
-                <Route path="/" element={<Login />} />
-                <Route path="/Home" element={<Home />} />
+                <Route path="/Login" element={<Login />} />
+                <Route path="/" element={<Home />} />
                 <Route path="/Acervo" element={<Acervo />} />
                 <Route path="/Aluguel/:id" element={<Aluguel />} />
                 <Route path="/ListLivros" element={<ListLivros />} />
